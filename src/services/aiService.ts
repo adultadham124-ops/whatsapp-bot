@@ -398,15 +398,32 @@ export async function analyzeAndReply(
     { role: 'user', content: message },
   ];
 
-  const completion = await groq.chat.completions.create({
-    model: 'llama-3.3-70b-versatile',
-    messages: messages as any,
-    temperature: 0.1,
-    response_format: { type: 'json_object' },
-    max_tokens: 500,
-  });
-
-  const text = completion.choices[0]?.message?.content;
+  let text: string | null | undefined;
+  try {
+    const completion = await groq.chat.completions.create({
+      model: 'llama-3.3-70b-versatile',
+      messages: messages as any,
+      temperature: 0.1,
+      response_format: { type: 'json_object' },
+      max_tokens: 500,
+    });
+    text = completion.choices[0]?.message?.content;
+  } catch (e: any) {
+    console.error('[GROQ]', e?.message || e);
+      const fallbacks = [
+        'خلصت المحادثات النهاردة، جرب بكرة 😅',
+        'الـ AI تعبان شوية النهاردة، كلمني بكرة',
+        'عندي مشكلة في الاتصال، هنتكلم بكرة إن شاء الله',
+      ];
+      return {
+        reply: fallbacks[Math.floor(Math.random() * fallbacks.length)],
+        intent: 'general_chat',
+      task_content: null,
+      due_at: null,
+      info_key: null,
+      info_value: null,
+    };
+  }
   if (!text) {
     return fallbackReply();
   }
