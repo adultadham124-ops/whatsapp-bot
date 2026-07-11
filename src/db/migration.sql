@@ -147,7 +147,17 @@ CREATE TABLE IF NOT EXISTS goal_milestones (
   done      BOOLEAN NOT NULL DEFAULT false
 );
 
--- 5) Indexes
+-- 5) user_profile for storing user info
+CREATE TABLE IF NOT EXISTS user_profile (
+  id         UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+  user_id    UUID NOT NULL REFERENCES users(id) ON DELETE CASCADE,
+  key        TEXT NOT NULL,
+  value      TEXT NOT NULL,
+  created_at TIMESTAMPTZ NOT NULL DEFAULT now(),
+  UNIQUE (user_id, key)
+);
+
+-- 6) Indexes
 CREATE INDEX IF NOT EXISTS idx_reminders_user ON reminders (user_id, sent) WHERE sent = false;
 CREATE INDEX IF NOT EXISTS idx_reminders_at ON reminders (remind_at);
 CREATE INDEX IF NOT EXISTS idx_transactions_user_date ON transactions (user_id, date);
@@ -157,8 +167,9 @@ CREATE INDEX IF NOT EXISTS idx_water_user_date ON water_intake (user_id, date);
 CREATE INDEX IF NOT EXISTS idx_sleep_user_date ON sleep_log (user_id, date);
 CREATE INDEX IF NOT EXISTS idx_bills_user ON bills (user_id, status);
 CREATE INDEX IF NOT EXISTS idx_goals_user ON goals (user_id, status);
+CREATE INDEX IF NOT EXISTS idx_user_profile_user ON user_profile (user_id);
 
--- 6) RLS
+-- 7) RLS
 ALTER TABLE reminders     ENABLE ROW LEVEL SECURITY;
 ALTER TABLE transactions  ENABLE ROW LEVEL SECURITY;
 ALTER TABLE budgets       ENABLE ROW LEVEL SECURITY;
@@ -168,6 +179,7 @@ ALTER TABLE sleep_log     ENABLE ROW LEVEL SECURITY;
 ALTER TABLE bills         ENABLE ROW LEVEL SECURITY;
 ALTER TABLE goals         ENABLE ROW LEVEL SECURITY;
 ALTER TABLE goal_milestones ENABLE ROW LEVEL SECURITY;
+ALTER TABLE user_profile  ENABLE ROW LEVEL SECURITY;
 
 DROP POLICY IF EXISTS reminders_own ON reminders;
 DROP POLICY IF EXISTS transactions_own ON transactions;
@@ -178,6 +190,7 @@ DROP POLICY IF EXISTS sleep_own ON sleep_log;
 DROP POLICY IF EXISTS bills_own ON bills;
 DROP POLICY IF EXISTS goals_own ON goals;
 DROP POLICY IF EXISTS milestones_own ON goal_milestones;
+DROP POLICY IF EXISTS user_profile_own ON user_profile;
 
 CREATE POLICY reminders_own ON reminders FOR ALL USING (user_id = auth.uid());
 CREATE POLICY transactions_own ON transactions FOR ALL USING (user_id = auth.uid());
@@ -190,3 +203,4 @@ CREATE POLICY goals_own ON goals FOR ALL USING (user_id = auth.uid());
 CREATE POLICY milestones_own ON goal_milestones FOR ALL USING (
   goal_id IN (SELECT id FROM goals WHERE user_id = auth.uid())
 );
+CREATE POLICY user_profile_own ON user_profile FOR ALL USING (user_id = auth.uid());
