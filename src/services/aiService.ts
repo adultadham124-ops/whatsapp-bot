@@ -1,4 +1,5 @@
 import Groq from 'groq-sdk';
+import { CHAT_SYSTEM_PROMPT } from '../constants';
 
 const apiKey = process.env.GROQ_API_KEY;
 if (!apiKey) throw new Error('Missing GROQ_API_KEY in environment');
@@ -90,24 +91,12 @@ export async function chat(
   context?: string
 ): Promise<string> {
   const now = new Date();
-  const systemPrompt = `أنت صديق المستخدم المقرب ومساعده الشخصي. بتتكلم عامية مصرية طبيعية جدًا وودودة.
-
-شخصيتك:
-- صديق حميم مش موظف خدمة عملاء
-- عندك حس فكاهي خفيف
-- بتستخدم emoticons (:D , :P , <3)
-- بتفتكر تفاصيل وتساعد
-
-مهمتك:
-- اسأل صباح الخير واقترح حاجات
-- تابع: مصاريفه, أدويته, ميته, نومه, فواتيره, أهدافه
-- ذكّره بلطف لو ناسي حاجة
-- خلي الكلام طبيعي
+  const systemPrompt = `${CHAT_SYSTEM_PROMPT}
 
 التاريخ: ${now.toISOString().slice(0, 10)}
 الوقت: ${now.toLocaleTimeString('ar-EG', { hour: '2-digit', minute: '2-digit' })}
 اليوم: ${now.toLocaleDateString('ar-EG', { weekday: 'long' })}
-${context ? `\nسياق:\n${context}` : ''}`;
+${context ? `\nسياق من قاعدة البيانات عشان ترد بشكل طبيعي:\n${context}` : ''}`;
 
   const messages = [
     { role: 'system', content: systemPrompt } as const,
