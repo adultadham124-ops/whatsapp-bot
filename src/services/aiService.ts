@@ -6,9 +6,20 @@ if (!apiKey) throw new Error('Missing GROQ_API_KEY in environment');
 const groq = new Groq({ apiKey });
 
 export interface AIResponse {
-  intent: 'create_task' | 'list_tasks' | 'mark_done' | 'daily_summary' | 'general_chat';
+  intent:
+    | 'create_task' | 'list_tasks' | 'mark_done'
+    | 'daily_summary'
+    | 'add_expense' | 'add_income' | 'monthly_summary' | 'set_budget'
+    | 'add_medication' | 'list_medications'
+    | 'log_water' | 'water_status'
+    | 'log_sleep' | 'sleep_status'
+    | 'add_bill' | 'list_bills' | 'pay_bill'
+    | 'add_goal' | 'list_goals' | 'goal_progress'
+    | 'get_weather'
+    | 'general_chat';
   content: string;
   due_at: string | null;
+  extra?: Record<string, unknown>;
 }
 
 export async function analyzeIntent(message: string): Promise<AIResponse> {
@@ -17,35 +28,44 @@ export async function analyzeIntent(message: string): Promise<AIResponse> {
     messages: [
       {
         role: 'system',
-        content: `أنت محلل نصوص بتحدد نية المستخدم من رسالته بالعامية المصرية. ارجع JSON فقط.
+        content: `أنت محلل نصوص ذكي بالعامية المصرية. حدد نية المستخدم وارجع JSON فقط.
+القاعدة الأولى: لو الكلام عادي أو سؤال أو حوار → general_chat دايمًا.
 
 التاريخ والوقت الحالي: ${new Date().toISOString()}
 
 القواعد:
-- لو طلب حاجة تتعمل (تذكير، مهمة) → intent: "create_task"
-- لو سأل عن مهامه أو عاوز يشوفها → intent: "list_tasks"
-- لو قال إنه خلص حاجة أو عاوز يشطبها → intent: "mark_done"
-- لو طلب ملخص أو عاوز يعرف يومه → intent: "daily_summary"
-- أي كلام تاني → intent: "general_chat"
+- مهمة/تذكير → create_task
+- سؤال عن المهام → list_tasks
+- خلصت حاجة → mark_done
+- ملخص يومي → daily_summary
+- مصروف/دفعت → add_expense (extra: { category, amount })
+- قبضت/دخل → add_income (extra: { category, amount })
+- ملخص مصاريف → monthly_summary
+- ميزانية → set_budget (extra: { category, amount })
+- دواء → add_medication (extra: { dosage, times })
+- عاوز أدويتي → list_medications
+- شربت مية → log_water (extra: { amount_ml })
+- عاوز كام شربت → water_status
+- نمت → log_sleep (extra: { bedtime })
+- عاوز نومي → sleep_status
+- فاتورة/اشتراك → add_bill (extra: { amount, frequency: "monthly"|"yearly"|"quarterly"|"one_time" })
+- عاوز فواتيري → list_bills
+- دفعت الفاتورة → pay_bill
+- هدف → add_goal (extra: { type: "monthly"|"yearly"|"custom", target_date })
+- عاوز أهدافي → list_goals
+- تقدم هدف → goal_progress (extra: { progress })
+- الطقس/الجو → get_weather (extra: { location })
 
-التواريخ النسبية للعامية المصرية:
-"بكرة" = tomorrow, "بعد بكرة" = day after tomorrow
-"الأسبوع الجاي" = next week, "الشهر الجاي" = next month
-"الصبح" = 09:00, "الظهر" = 12:00, "العصر" = 15:00
-"المغرب" = 18:00, "الليل" = 21:00
-"كمان دقيقة" = 1 minute from now
-"كمان ساعة" = 1 hour from now
-"كمان كذا دقيقة/ساعة" = حسب الرقم
+أمثلة general_chat: "ازيك" "عامل ايه" "اخبارك" "عامل ايه النهاردة" "كلمني" "ضحكني" "حاسس بكسل" "ممكن اسالك" "عندي فضول" "تعرف" "ايه رايك"
 
-حوّل أي تاريخ نسبي إلى ISO date كامل. لو مفيش تاريخ، due_at = null.
-
-content: وصف المهمة (للـ create_task/mark_done) أو رسالة المستخدم نفسها (لـ general_chat)
+التواريخ: "بكرة"=غداً، "كمان ساعة"=بعد ساعة
 
 أرجع JSON:
 {
-  "intent": "create_task" | "list_tasks" | "mark_done" | "daily_summary" | "general_chat",
-  "content": "نص مختصر",
-  "due_at": "ISO date or null"
+  "intent": "...",
+  "content": "نص أو وصف مختصر",
+  "due_at": null,
+  "extra": {}
 }`,
       },
       { role: 'user', content: message },
@@ -69,30 +89,29 @@ export async function chat(
   history: { role: 'user' | 'assistant'; content: string }[],
   context?: string
 ): Promise<string> {
-  const systemPrompt = `أنت صديق المستخدم المقرب ومساعده الشخصي. بتتكلم عامية مصرية طبيعية جدًا وودودة. مش روبوت ولا رسمي.
+  const now = new Date();
+  const systemPrompt = `أنت صديق المستخدم المقرب ومساعده الشخصي. بتتكلم عامية مصرية طبيعية جدًا وودودة.
 
 شخصيتك:
-- صديق حميم، بتتكلم زي صاحبك مش موظف خدمة عملاء
-- فاكرهومساعد، بتفتكر تفاصيل وأيام الأسبوع
+- صديق حميم مش موظف خدمة عملاء
 - عندك حس فكاهي خفيف
-- بتستخدم emoticons (:D , :P , <3) بطريقة طبيعية
-- لو المستخدم قال حاجة حزينة، تتفهم وتحاول تشجع
-- لو قال حاجة مضحكة، تضحك معاه
-- مبتقولش "كيف أقدر أساعدك" ولا أي حاجة رسمية
+- بتستخدم emoticons (:D , :P , <3)
+- بتفتكر تفاصيل وتساعد
 
 مهمتك:
-- اسأل صباح الخير واقترح حاجات يعملها النهاردة
-- ذكرني بالمهام المتأخرة أو القريبة
-- لو عرفت إنه ناسي حاجة، ذكّره بلطف
-- اسأله عن يومه واهتماماته
-- خلي الكلام طبيعي مش متكلف
+- اسأل صباح الخير واقترح حاجات
+- تابع: مصاريفه, أدويته, ميته, نومه, فواتيره, أهدافه
+- ذكّره بلطف لو ناسي حاجة
+- خلي الكلام طبيعي
 
-التاريخ والوقت الحالي: ${new Date().toISOString()}
-${context ? `\nسياق إضافي عن المستخدم حالياً:\n${context}` : ''}`;
+التاريخ: ${now.toISOString().slice(0, 10)}
+الوقت: ${now.toLocaleTimeString('ar-EG', { hour: '2-digit', minute: '2-digit' })}
+اليوم: ${now.toLocaleDateString('ar-EG', { weekday: 'long' })}
+${context ? `\nسياق:\n${context}` : ''}`;
 
   const messages = [
     { role: 'system', content: systemPrompt } as const,
-    ...history.slice(-10).map((m) => ({ role: m.role as 'user' | 'assistant', content: m.content })),
+    ...history.slice(-10).map(m => ({ role: m.role as 'user' | 'assistant', content: m.content })),
     { role: 'user', content: message } as const,
   ];
 
