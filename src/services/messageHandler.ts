@@ -112,6 +112,61 @@ export async function handleIncomingMessage(
     return reply;
   }
 
+  // Delete task: "شيل N" or "شيل مهمة X" or "الغي الاجتماع"
+  const delMatch = messageText.match(/^(الغي|شيل|حذف|احذف|امسح|مسح)\s*(مهمة\s*)?(.+)$/i);
+  if (delMatch) {
+    const target = delMatch[3].trim();
+    if (/^\d+$/.test(target)) {
+      // Delete by index
+      const num = parseInt(target, 10);
+      const { data: tasks } = await supabase
+        .from('tasks')
+        .select('id, content')
+        .eq('user_id', userId)
+        .eq('status', 'pending')
+        .order('created_at', { ascending: false });
+      if (!tasks?.length || !tasks[num - 1]) {
+        const reply = 'رقم غلط أو مفيش مهام';
+        await supabase.from('conversations').insert({ user_id: userId, message: reply, role: 'assistant' });
+        await sendWhatsAppMessage(phoneNumber, reply);
+        return reply;
+      }
+      const task = tasks[num - 1];
+      await supabase.from('tasks').delete().eq('id', task.id);
+      const reply = `حذفت "${task.content}" 🗑️`;
+      await supabase.from('conversations').insert({ user_id: userId, message: reply, role: 'assistant' });
+      await sendWhatsAppMessage(phoneNumber, reply);
+      return reply;
+    }
+    // Delete by content
+    const { data: tasks } = await supabase
+      .from('tasks')
+      .select('id, content')
+      .eq('user_id', userId)
+      .eq('status', 'pending')
+      .or(`content.ilike.%${target}%,content.ilike.%${target.split(' ').slice(0, 2).join(' ')}%`)
+      .limit(3);
+    if (!tasks?.length) {
+      const reply = 'معرفتش ألاقي مهمة بالمواصفات دي';
+      await supabase.from('conversations').insert({ user_id: userId, message: reply, role: 'assistant' });
+      await sendWhatsAppMessage(phoneNumber, reply);
+      return reply;
+    }
+    if (tasks.length === 1) {
+      await supabase.from('tasks').delete().eq('id', tasks[0].id);
+      const reply = `حذفت "${tasks[0].content}" 🗑️`;
+      await supabase.from('conversations').insert({ user_id: userId, message: reply, role: 'assistant' });
+      await sendWhatsAppMessage(phoneNumber, reply);
+      return reply;
+    }
+    const reply = 'في أكتر من مهمة زي كده:\n' +
+      tasks.map((t, i) => `\n${i + 1}. ${t.content}`).join('') +
+      '\nقول "شيل [رقم]" عشان تحدد';
+    await supabase.from('conversations').insert({ user_id: userId, message: reply, role: 'assistant' });
+    await sendWhatsAppMessage(phoneNumber, reply);
+    return reply;
+  }
+
   if (/^تم\s*(\d+)$/.test(messageText)) {
     const num = parseInt(messageText.match(/^تم\s*(\d+)$/)![1], 10);
     const { data: tasks } = await supabase
@@ -183,17 +238,32 @@ export async function handleIncomingMessage(
     }
 
     case 'mark_done': {
-      const q = ai.task_content || ai.reply.replace(/^(خلصت|تم|شطب)\s*/i, '');
+      const q = ai.task_content || ai.reply.replace(/^(خلصت|تم|شطب|لغيت)\s*/i, '').trim();
+      if (!q) {
+        reply = 'أي مهمة تقصد بالظبط؟';
+        break;
+      }
       const { data: tasks } = await supabase
         .from('tasks')
         .select('id, content')
         .eq('user_id', userId)
         .eq('status', 'pending')
-        .ilike('content', `%${q}%`)
-        .limit(1);
+        .or(`content.ilike.%${q}%,content.ilike.%${q.split(' ').slice(0, 2).join(' ')}%`)
+        .limit(3);
       if (tasks?.length) {
-        await supabase.from('tasks').update({ status: 'done' }).eq('id', tasks[0].id);
-        reply = randomPick([`تم ✅ "${tasks[0].content}" 🎉`, `خلصت "${tasks[0].content}" 👏`]);
+        if (tasks.length === 1) {
+          await supabase.from('tasks').update({ status: 'done' }).eq('id', tasks[0].id);
+          reply = randomPick([`تم ✅ "${tasks[0].content}" 🎉`, `خلصت "${tasks[0].content}" 👏`]);
+        } else {
+          reply = 'في أكتر من مهمة زي كده:\n' +
+            tasks.map((t, i) => `\n${i + 1}. ${t.content}`).join('') +
+            '\nقول رقمها أو "تم [رقم]"';
+        }
+      } else {
+        reply = randomPick([
+          'معرفتش ألاقي مهمة زي كده، جرب تكتب "مهامي"',
+          'مفيش حاجة بالمواصفات دي في الليستة',
+        ]);
       }
       break;
     }
