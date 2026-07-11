@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Laguna Dubai — Menu</title>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+:root {
+  --gold: #e0263c;
+  --gold2: #ff8a93;
+  --navy: #111111;
+  --green: #25d366;
+  --red: #e0263c;
+}
+body {
+  font-family: 'Cairo', sans-serif;
+  background: #0f0f0f;
+  min-height: 100vh;
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+/* ═══ HERO ═══ */
+.hero {
+  position: relative;
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding: 40px 20px 30px;
+}
+.hero-bg {
+  position: absolute; inset: 0;
+  background-image: url('https://images.unsplash.com/photo-1559305616-3f99cd43e353?w=600&fit=crop');
+  background-size: cover;
+  background-position: center;
+  filter: brightness(0.35);
+}
+.hero-overlay {
+  position: absolute; inset: 0;
+  background: linear-gradient(180deg, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.8) 100%);
+}
+.hero-content { position: relative; z-index: 2; text-align: center; width: 100%; }
+
+/* Logo */
+.logo-svg { width: 64px; height: 64px; margin: 0 auto 10px; display: block; }
+.brand { font-size: 2.6rem; font-weight: 900; letter-spacing: 0.2em; color: var(--gold); line-height:1; }
+.brand-sub { font-size: 0.72rem; letter-spacing: 0.3em; color: var(--gold2); opacity:.8; margin-top:3px; }
+.brand-divider { width: 60px; height: 1px; background: linear-gradient(90deg,transparent,var(--gold),transparent); margin: 14px auto; }
+.brand-tag { font-size: 0.8rem; color: rgba(255,255,255,0.6); letter-spacing: 0.12em; margin-bottom: 28px; }
+
+/* Category buttons — black pill grid, like reference screenshots */
+.cats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  width: 100%;
+  max-width: 320px;
+  margin: 0 auto;
+}
+.cat-btn {
+  background: #111;
+  border: none;
+  border-radius: 50px;
+  padding: 14px 8px;
+  color: #fff;
+  font-family: 'Cairo', sans-serif;
+  font-size: 0.82rem;
+  font-weight: 900;
+  letter-spacing: 0.02em;
+  text-decoration: underline;
+  text-decoration-color: var(--gold);
+  text-underline-offset: 3px;
+  cursor: pointer;
+  transition: all 0.2s;
+  text-align: center;
+  font-style: italic;
+}
+.cat-btn:hover, .cat-btn.active {
+  background: var(--gold);
+  color: var(--navy);
+  text-decoration-color: var(--navy);
+  transform: scale(1.03);
+}
+.cat-btn.main {
+  background: var(--red);
+  text-decoration-color: #fff;
+}
+.cat-btn.main:hover { background: #b81d30; }
+
+/* Social icons in hero */
+.social-hero { display: flex; gap: 18px; justify-content: center; margin-top: 30px; }
+.social-hero a {
+  width: 46px; height: 46px;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.3rem;
+  text-decoration: none;
+  transition: transform 0.2s;
+}
+.social-hero a:hover { transform: scale(1.1); }
+.s-insta { background: linear-gradient(135deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888); }
+.s-whats { background: #25d366; }
+.s-face  { background: #1877f2; }
+
+/* ═══ ITEMS SECTION ═══ */
+.items-section { display: none; padding: 20px 14px 40px; }
+.items-section.active { display: block; }
+
+.section-head {
+  text-align: center;
+  padding: 10px 0 24px;
+  position: relative;
+}
+.back-btn {
+  position: absolute; right: 0; top: 10px;
+  background: rgba(224,38,60,0.15);
+  border: 1px solid var(--gold);
+  color: var(--gold);
+  font-family: 'Cairo', sans-serif;
+  font-size: 0.8rem;
+  padding: 6px 14px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.sec-title {
+  font-size: 1.6rem;
+  font-weight: 900;
+  color: var(--gold);
+  letter-spacing: 0.04em;
+}
+.sec-divider { width: 50px; height: 1px; background: linear-gradient(90deg,transparent,var(--gold),transparent); margin: 10px auto 0; }
+
+/* ═══ ITEM CARDS — image / price+name / black ORDER NOW bar ═══ */
+.item-card {
+  background: #f2f2f2;
+  border-radius: 18px;
+  overflow: hidden;
+  margin-bottom: 18px;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.35);
+  display: flex;
+  flex-direction: column;
+  padding: 14px;
+  gap: 12px;
+}
+.item-img-wrap {
+  height: 170px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #e9e9e9;
+}
+.item-img-wrap img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.item-text-block { text-align: right; }
+.item-price-tag {
+  font-size: 1.05rem;
+  font-weight: 900;
+  color: var(--navy);
+  display: inline-flex;
+  align-items: baseline;
+  gap: 4px;
+}
+.item-price-tag .unit {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--gold);
+}
+.item-name-en {
+  font-size: 1.3rem;
+  font-weight: 900;
+  color: #111;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  line-height: 1.15;
+  margin-top: 2px;
+}
+.item-name-ar {
+  font-size: 0.85rem;
+  color: #777;
+  font-weight: 600;
+  margin-top: 2px;
+}
+.order-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #111;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 11px 14px;
+  font-family: 'Cairo', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 900;
+  font-style: italic;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  text-decoration: none;
+  width: 100%;
+  transition: background 0.2s;
+}
+.order-btn:hover { background: #222; }
+.order-btn .wa-icon {
+  width: 34px; height: 34px;
+  background: var(--green);
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.1rem;
+  flex-shrink: 0;
+}
+
+/* ═══ QUICK NAV — grid of other categories at the bottom of each section ═══ */
+.quick-nav {
+  margin-top: 30px;
+  padding-top: 24px;
+  border-top: 1px solid rgba(224,38,60,0.25);
+}
+.quick-nav-title {
+  text-align: center;
+  color: var(--gold);
+  font-weight: 800;
+  font-size: 0.95rem;
+  margin-bottom: 14px;
+  letter-spacing: 0.04em;
+}
+.quick-nav-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+/* ═══ FOOTER ═══ */
+.site-footer {
+  text-align: center;
+  padding: 24px 20px;
+  border-top: 1px solid rgba(224,38,60,0.15);
+  background: #000000;
+  color: rgba(255,255,255,0.4);
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+}
+.site-footer span { color: var(--gold); }
+</style>
+</head>
+<body>
+
+<!-- ═══ HERO ═══ -->
+<div class="hero" id="heroPage">
+  <div class="hero-bg"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+
+    <svg class="logo-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+      <rect x="46" y="10" width="8" height="38" fill="#e0263c" rx="1"/>
+      <polygon points="50,4 46,10 54,10" fill="#e0263c"/>
+      <path d="M28 52 Q50 38 72 52" stroke="#e0263c" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+      <path d="M22 60 Q50 44 78 60" stroke="#e0263c" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.7"/>
+      <path d="M26 68 Q50 56 74 68" stroke="#e0263c" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.45"/>
+    </svg>
+
+    <div class="brand">LAGUNA</div>
+    <div class="brand-sub">— DUBAI —</div>
+    <div class="brand-divider"></div>
+    <div class="brand-tag">CAFE · RESTAURANT</div>
+
+    <div class="cats" id="heroCats"></div>
+
+    <div class="social-hero">
+      <a href="#" class="s-insta">📷</a>
+      <a href="https://wa.me/XXXXXXXXXX" class="s-whats">📞</a>
+      <a href="#" class="s-face">f</a>
+    </div>
+
+  </div>
+</div>
+
+<!-- ═══ ITEMS (built dynamically) ═══ -->
+<div id="itemsWrapper"></div>
+
+<footer class="site-footer">
+  <span>LAGUNA</span> — DUBAI · Cafe & Restaurant
+</footer>
+
+<script>
+// ═══ CATEGORIES (key, hero button label, section title) ═══
+const CATS = [
+  { key:'coffee',    hero:'COFFEE ☕',       title:'☕ القهوة' },
+  { key:'tea',       hero:'TEA 🍵',          title:'🍵 الشاي' },
+  { key:'espresso',  hero:'ESPRESSO ☕',     title:'☕ الاسبرسو' },
+  { key:'iced',      hero:'ICED COFFEE 🧊',  title:'🧊 ايس كوفي' },
+  { key:'matcha',    hero:'MATCHA 🍃',       title:'🍃 ماتشا' },
+  { key:'juices',    hero:'FRESH JUICES 🍊', title:'🍊 العصائر الفريش' },
+  { key:'cocktails', hero:'COCKTAILS 🍹',    title:'🍹 الكوكتيلات' },
+  { key:'frappe',    hero:'FRAPPE 🥤',       title:'🥤 فرابيه' },
+  { key:'smoothie',  hero:'SMOOTHIE 🫐',     title:'🫐 اسموزي' },
+  { key:'mojito',    hero:'MOJITO 🫙',       title:'🫙 موهيتو' },
+  { key:'shake',     hero:'MILKSHAKE 🍫',    title:'🍫 ميلك شيك' },
+  { key:'hot',       hero:'HOT DRINKS 🌡️',  title:'🌡️ المشروبات الساخنة' },
+  { key:'yogurt',    hero:'YOGURT 🍓',       title:'🍓 الزبادي' },
+  { key:'cans',      hero:'CANS 🥫',         title:'🥫 كانز' },
+  { key:'popcorn',   hero:'POPCORN 🍿',      title:'🍿 الفشار' },
+];
+
+// ═══ MENU DATA (updated prices/items) ═══
+const MENU = {
+  coffee: [
+    { ar:'سنجل تركي',     en:'TURKISH SINGLE',      price:30, img:'https://images.unsplash.com/photo-1606791422814-b32c705e3e2f?w=600&h=400&fit=crop' },
+    { ar:'دبل تركي',      en:'TURKISH DOUBLE',      price:35, img:'https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?w=600&h=400&fit=crop' },
+    { ar:'دبل تركي كبير', en:'TURKISH DOUBLE LARGE', price:40, img:'https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?w=600&h=400&fit=crop' },
+    { ar:'فرنساوي',       en:'FRENCH COFFEE',       price:40, img:'https://images.unsplash.com/photo-1497515114629-f71d768fd07c?w=600&h=400&fit=crop' },
+    { ar:'قهوة نكهات',    en:'FLAVORED COFFEE',     price:60, img:'https://images.unsplash.com/photo-1587734361993-0490df9a9b92?w=600&h=400&fit=crop' },
+  ],
+  tea: [
+    { ar:'شاي احمر',   en:'RED TEA',         price:20, img:'https://images.unsplash.com/photo-1544787219-7f47ccb76574?w=600&h=400&fit=crop' },
+    { ar:'شاي اخضر',   en:'GREEN TEA',       price:20, img:'https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=600&h=400&fit=crop' },
+    { ar:'شاي نكهات',  en:'FLAVORED TEA',    price:35, img:'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&h=400&fit=crop' },
+    { ar:'شاي بلبن',   en:'MILK TEA',        price:50, img:'https://images.unsplash.com/photo-1576092768241-dec231879fc3?w=600&h=400&fit=crop' },
+    { ar:'شاي كرك',    en:'KARAK TEA',       price:50, img:'https://images.unsplash.com/photo-1563822249366-3efb23b8ae99?w=600&h=400&fit=crop' },
+    { ar:'براد شاي',   en:'TEA POT',         price:60, img:'https://images.unsplash.com/photo-1502899576159-f224dc2349fa?w=600&h=400&fit=crop' },
+    { ar:'اعشاب',      en:'HERBAL TEA',      price:35, img:'https://images.unsplash.com/photo-1471943311424-646960669fbc?w=600&h=400&fit=crop' },
+  ],
+  espresso: [
+    { ar:'سنجل اسبرسو', en:'SINGLE ESPRESSO', price:35, img:'https://images.unsplash.com/photo-1510591509098-f4fdc6d0ff04?w=600&h=400&fit=crop' },
+    { ar:'دبل اسبرسو',  en:'DOUBLE ESPRESSO', price:50, img:'https://images.unsplash.com/photo-1521302080334-4bebac2763a6?w=600&h=400&fit=crop' },
+    { ar:'كابتشينو',    en:'CAPPUCCINO',      price:60, img:'https://images.unsplash.com/photo-1572442388796-11668a67e53d?w=600&h=400&fit=crop' },
+    { ar:'دارك موكا',   en:'DARK MOCHA',      price:60, img:'https://images.unsplash.com/photo-1578314675249-a6910f80cc4e?w=600&h=400&fit=crop' },
+    { ar:'وايت موكا',   en:'WHITE MOCHA',     price:65, img:'https://images.unsplash.com/photo-1517701604599-bb29b565090b?w=600&h=400&fit=crop' },
+    { ar:'كورتادو',     en:'CORTADO',         price:70, img:'https://images.unsplash.com/photo-1522992319-0365e5f11656?w=600&h=400&fit=crop' },
+    { ar:'لاتيه',       en:'LATTE',           price:60, img:'https://images.unsplash.com/photo-1570968915860-54d5c301fa9f?w=600&h=400&fit=crop' },
+  ],
+  iced: [
+    { ar:'ايس موكا',         en:'ICED MOCHA',          price:60, img:'https://images.unsplash.com/photo-1539888500857-e7f26048c10f?w=600&h=400&fit=crop' },
+    { ar:'ايس كوفي',         en:'ICED COFFEE',         price:60, img:'https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=600&h=400&fit=crop' },
+    { ar:'ايس لاتيه',        en:'ICED LATTE',          price:60, img:'https://images.unsplash.com/photo-1572490122747-3368b75b5f5e?w=600&h=400&fit=crop' },
+    { ar:'ايس شوكلت',        en:'ICED CHOCOLATE',      price:70, img:'https://images.unsplash.com/photo-1579954115545-a95591f28bfc?w=600&h=400&fit=crop' },
+    { ar:'ايس كوفي نكهات',   en:'ICED COFFEE FLAVORS', price:70, img:'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&h=400&fit=crop' },
+    { ar:'اسبانش لاتيه',     en:'SPANISH LATTE',       price:70, img:'https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=600&h=400&fit=crop' },
+    { ar:'ايس امريكان',      en:'ICED AMERICANO',      price:70, img:'https://images.unsplash.com/photo-1534040385115-33dcb3acba5b?w=600&h=400&fit=crop' },
+  ],
+  matcha: [
+    { ar:'ماتشا',             en:'MATCHA',             price:60, img:'https://images.unsplash.com/photo-1515823662972-da6a2e4d3002?w=600&h=400&fit=crop' },
+    { ar:'ايس ماتشا',         en:'ICED MATCHA',        price:75, img:'https://images.unsplash.com/photo-1590440161823-cb94d35c7fb5?w=600&h=400&fit=crop' },
+    { ar:'ماتشا فرابيه',      en:'MATCHA FRAPPE',      price:70, img:'https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=600&h=400&fit=crop' },
+    { ar:'ايس ماتشا لاتيه',   en:'ICED MATCHA LATTE',  price:90, img:'https://images.unsplash.com/photo-1515823662972-da6a2e4d3002?w=600&h=400&fit=crop' },
+    { ar:'ماتشا ميلك شيك',    en:'MATCHA MILKSHAKE',   price:75, img:'https://images.unsplash.com/photo-1553361371-9b22f78e8b1d?w=600&h=400&fit=crop' },
+  ],
+  hot: [
+    { ar:'قرفه',         en:'CINNAMON',         price:20, img:'https://images.unsplash.com/photo-1612200820755-d08b4e2e0e17?w=600&h=400&fit=crop' },
+    { ar:'حلبه',         en:'FENUGREEK',        price:20, img:'https://images.unsplash.com/photo-1571119574842-d7be6dd08a1d?w=600&h=400&fit=crop' },
+    { ar:'كاكاو',        en:'COCOA',            price:20, img:'https://images.unsplash.com/photo-1542990253-0d0f5be5f0ed?w=600&h=400&fit=crop' },
+    { ar:'زنجبيل',       en:'GINGER',           price:20, img:'https://images.unsplash.com/photo-1563822249366-3efb23b8ae99?w=600&h=400&fit=crop' },
+    { ar:'قرفه حليب',    en:'CINNAMON MILK',    price:30, img:'https://images.unsplash.com/photo-1549060279-7e168fcee0c2?w=600&h=400&fit=crop' },
+    { ar:'حلبه حليب',    en:'FENUGREEK MILK',   price:30, img:'https://images.unsplash.com/photo-1515823662972-da6a2e4d3002?w=600&h=400&fit=crop' },
+    { ar:'هوت شوكلت',    en:'HOT CHOCOLATE',    price:30, img:'https://images.unsplash.com/photo-1517682555765-cc6c4e8d0a2f?w=600&h=400&fit=crop' },
+    { ar:'سحلب',         en:'SAHLAB',           price:50, img:'https://images.unsplash.com/photo-1544787219-7f47ccb76574?w=600&h=400&fit=crop' },
+    { ar:'سحلب مكسرات',  en:'SAHLAB WITH NUTS', price:50, img:'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&h=400&fit=crop' },
+  ],
+  juices: [
+    { ar:'ليمون',             en:'LEMON',               price:55,  img:'https://images.unsplash.com/photo-1621506289937-a8e4df240d0b?w=600&h=400&fit=crop' },
+    { ar:'عناب',              en:'JUJUBE',              price:55,  img:'https://images.unsplash.com/photo-1600271886742-f049cd451bba?w=600&h=400&fit=crop' },
+    { ar:'برتقال',            en:'ORANGE',              price:60,  img:'https://images.unsplash.com/photo-1534353473418-4cfa0c56b795?w=600&h=400&fit=crop' },
+    { ar:'فراولة',            en:'STRAWBERRY',          price:60,  img:'https://images.unsplash.com/photo-1615478503562-ec2d8aa0e24e?w=600&h=400&fit=crop' },
+    { ar:'مانجا',             en:'MANGO',               price:60,  img:'https://images.unsplash.com/photo-1605027990121-cbae9e0642b2?w=600&h=400&fit=crop' },
+    { ar:'جوافه',             en:'GUAVA',               price:60,  img:'https://images.unsplash.com/photo-1610832958506-aa56368176cf?w=600&h=400&fit=crop' },
+    { ar:'موز',               en:'BANANA',              price:60,  img:'https://images.unsplash.com/photo-1603833665858-e61d17a86224?w=600&h=400&fit=crop' },
+    { ar:'بطيخ',              en:'WATERMELON',          price:60,  img:'https://images.unsplash.com/photo-1499638673689-79a0b5115d87?w=600&h=400&fit=crop' },
+    { ar:'برتقال جزر',        en:'ORANGE CARROT',       price:65,  img:'https://images.unsplash.com/photo-1621506289937-a8e4df240d0b?w=600&h=400&fit=crop' },
+    { ar:'فراولة لبن',        en:'STRAWBERRY MILK',     price:65,  img:'https://images.unsplash.com/photo-1553361371-9b22f78e8b1d?w=600&h=400&fit=crop' },
+    { ar:'جوافه لبن',         en:'GUAVA MILK',          price:65,  img:'https://images.unsplash.com/photo-1576092768241-dec231879fc3?w=600&h=400&fit=crop' },
+    { ar:'جوافه نعناع',       en:'GUAVA MINT',          price:70,  img:'https://images.unsplash.com/photo-1490474418585-ba9bad8fd0ea?w=600&h=400&fit=crop' },
+    { ar:'ليمون نعناع',       en:'LEMON MINT',          price:55,  img:'https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=600&h=400&fit=crop' },
+    { ar:'بلح بلبن',          en:'DATE MILK',           price:65,  img:'https://images.unsplash.com/photo-1570197788417-0e82375c9371?w=600&h=400&fit=crop' },
+    { ar:'رمان',              en:'POMEGRANATE',         price:75,  img:'https://images.unsplash.com/photo-1552673597-e3cd6747a996?w=600&h=400&fit=crop' },
+    { ar:'كيوي',              en:'KIWI',                price:75,  img:'https://images.unsplash.com/photo-1618897996318-5a901fa696ca?w=600&h=400&fit=crop' },
+    { ar:'افوكادو',           en:'AVOCADO',             price:80,  img:'https://images.unsplash.com/photo-1543362906-acfc16c67564?w=600&h=400&fit=crop' },
+    { ar:'افوكادو عسل مكسرات',en:'AVOCADO HONEY NUTS',  price:100, img:'https://images.unsplash.com/photo-1541014741259-de529411b96a?w=600&h=400&fit=crop' },
+    { ar:'فريش هيلثي لاجونا', en:'LAGUNA HEALTHY FRESH',price:100, img:'https://images.unsplash.com/photo-1505252585461-04db1eb84625?w=600&h=400&fit=crop' },
+  ],
+  cocktails: [
+    { ar:'هاواي',             en:'HAWAII',           price:70,  img:'https://images.unsplash.com/photo-1551538827-9c037cb4f32a?w=600&h=400&fit=crop' },
+    { ar:'لاروز',             en:'LAROUZ',           price:75,  img:'https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=600&h=400&fit=crop' },
+    { ar:'جرين ريد',          en:'GREEN RED',        price:85,  img:'https://images.unsplash.com/photo-1560508180-03f285f67ded?w=600&h=400&fit=crop' },
+    { ar:'ريد ماش',           en:'RED MASH',         price:70,  img:'https://images.unsplash.com/photo-1586788680434-30d324b2d46f?w=600&h=400&fit=crop' },
+    { ar:'بلو بيري كيوي ماش', en:'BLUEBERRY KIWI',   price:80,  img:'https://images.unsplash.com/photo-1553361371-9b22f78e8b1d?w=600&h=400&fit=crop' },
+    { ar:'عنابي',             en:'ENABI',            price:80,  img:'https://images.unsplash.com/photo-1551538827-9c037cb4f32a?w=600&h=400&fit=crop' },
+    { ar:'بريزي كيوي',        en:'BREEZY KIWI',      price:70,  img:'https://images.unsplash.com/photo-1571950006183-2e7b58bb8e27?w=600&h=400&fit=crop' },
+    { ar:'وايت اوشن',         en:'WHITE OCEAN',      price:75,  img:'https://images.unsplash.com/photo-1544145945-f90425340c7e?w=600&h=400&fit=crop' },
+    { ar:'كامبا',             en:'KAMBA',            price:85,  img:'https://images.unsplash.com/photo-1576200836524-a8d38e1addf5?w=600&h=400&fit=crop' },
+    { ar:'بارادايس باشن',     en:'PARADISE PASSION', price:70,  img:'https://images.unsplash.com/photo-1560508179-b2c9a3f8e92b?w=600&h=400&fit=crop' },
+    { ar:'فلوريدا',           en:'FLORIDA',          price:85,  img:'https://images.unsplash.com/photo-1600271886742-f049cd451bba?w=600&h=400&fit=crop' },
+    { ar:'جالاكسي',           en:'GALAXY',           price:90,  img:'https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?w=600&h=400&fit=crop' },
+    { ar:'عوار القلب',        en:'HEARTACHE',        price:90,  img:'https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?w=600&h=400&fit=crop' },
+    { ar:'لاجونا سجنتشر',     en:'LAGUNA SIGNATURE', price:100, img:'https://images.unsplash.com/photo-1551751299-1b51cab2694c?w=600&h=400&fit=crop' },
+    { ar:'ديلسي',             en:'DELCI',            price:90,  img:'https://images.unsplash.com/photo-1547592180-85f173990554?w=600&h=400&fit=crop' },
+  ],
+  frappe: [
+    { ar:'فرابيه فانيليا',    en:'VANILLA FRAPPE',     price:60, img:'https://images.unsplash.com/photo-1572490122747-3368b75b5f5e?w=600&h=400&fit=crop' },
+    { ar:'فرابيه كارميل',     en:'CARAMEL FRAPPE',     price:65, img:'https://images.unsplash.com/photo-1553361371-9b22f78e8b1d?w=600&h=400&fit=crop' },
+    { ar:'فرابيه وايت شوكلت', en:'WHITE CHOC FRAPPE',  price:65, img:'https://images.unsplash.com/photo-1517682555765-cc6c4e8d0a2f?w=600&h=400&fit=crop' },
+    { ar:'فرابيه لوتس',       en:'LOTUS FRAPPE',       price:70, img:'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&h=400&fit=crop' },
+    { ar:'فرابيه شوكلت',      en:'CHOCOLATE FRAPPE',   price:75, img:'https://images.unsplash.com/photo-1579954115545-a95591f28bfc?w=600&h=400&fit=crop' },
+    { ar:'فرابيه بندق',       en:'HAZELNUT FRAPPE',    price:65, img:'https://images.unsplash.com/photo-1539888500857-e7f26048c10f?w=600&h=400&fit=crop' },
+    { ar:'فرابيه نوتيلا',     en:'NUTELLA FRAPPE',     price:65, img:'https://images.unsplash.com/photo-1576092768241-dec231879fc3?w=600&h=400&fit=crop' },
+    { ar:'فرابيه اوريو',      en:'OREO FRAPPE',        price:75, img:'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=600&h=400&fit=crop' },
+    { ar:'فرابيه بيستاشيو',   en:'PISTACHIO FRAPPE',   price:70, img:'https://images.unsplash.com/photo-1582901956003-c27a43a1e90e?w=600&h=400&fit=crop' },
+  ],
+  smoothie: [
+    { ar:'كيوي',            en:'KIWI',              price:55, img:'https://images.unsplash.com/photo-1618897996318-5a901fa696ca?w=600&h=400&fit=crop' },
+    { ar:'ليمون نعناع',     en:'LEMON MINT',        price:60, img:'https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=600&h=400&fit=crop' },
+    { ar:'ليمون',           en:'LEMON',             price:55, img:'https://images.unsplash.com/photo-1621506289937-a8e4df240d0b?w=600&h=400&fit=crop' },
+    { ar:'بلو بيري',        en:'BLUEBERRY',         price:60, img:'https://images.unsplash.com/photo-1553361371-9b22f78e8b1d?w=600&h=400&fit=crop' },
+    { ar:'لاجونا سجنتشر',   en:'LAGUNA SIGNATURE',  price:75, img:'https://images.unsplash.com/photo-1551751299-1b51cab2694c?w=600&h=400&fit=crop' },
+    { ar:'باشن فروت',       en:'PASSION FRUIT',     price:55, img:'https://images.unsplash.com/photo-1505252585461-04db1eb84625?w=600&h=400&fit=crop' },
+    { ar:'بطيخ',            en:'WATERMELON',        price:60, img:'https://images.unsplash.com/photo-1499638673689-79a0b5115d87?w=600&h=400&fit=crop' },
+    { ar:'ميكس بيري',       en:'MIX BERRY',         price:65, img:'https://images.unsplash.com/photo-1490474418585-ba9bad8fd0ea?w=600&h=400&fit=crop' },
+    { ar:'مانجا',           en:'MANGO',             price:60, img:'https://images.unsplash.com/photo-1605027990121-cbae9e0642b2?w=600&h=400&fit=crop' },
+  ],
+  mojito: [
+    { ar:'صن رايز',         en:'SUN RISE',          price:60,  img:'https://images.unsplash.com/photo-1621506289937-a8e4df240d0b?w=600&h=400&fit=crop' },
+    { ar:'بينا كولادا',     en:'PINA COLADA',       price:65,  img:'https://images.unsplash.com/photo-1541014741259-de529411b96a?w=600&h=400&fit=crop' },
+    { ar:'بلو باشن',        en:'BLUE PASSION',      price:60,  img:'https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?w=600&h=400&fit=crop' },
+    { ar:'سكوتش منت',       en:'SCOTCH MINT',       price:65,  img:'https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=600&h=400&fit=crop' },
+    { ar:'صن شاين',         en:'SUN SHINE',         price:60,  img:'https://images.unsplash.com/photo-1560508179-b2c9a3f8e92b?w=600&h=400&fit=crop' },
+    { ar:'شيري كولادا',     en:'CHERRY COLADA',     price:65,  img:'https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?w=600&h=400&fit=crop' },
+    { ar:'لاجونا سجنتشر',   en:'LAGUNA SIGNATURE',  price:100, img:'https://images.unsplash.com/photo-1551751299-1b51cab2694c?w=600&h=400&fit=crop' },
+    { ar:'ريد بول',         en:'RED BULL MOJITO',   price:80,  img:'https://images.unsplash.com/photo-1576200836524-a8d38e1addf5?w=600&h=400&fit=crop' },
+  ],
+  shake: [
+    { ar:'شوكلت',           en:'CHOCOLATE',         price:70,  img:'https://images.unsplash.com/photo-1579954115545-a95591f28bfc?w=600&h=400&fit=crop' },
+    { ar:'خوخ',             en:'PEACH',             price:75,  img:'https://images.unsplash.com/photo-1571950006183-2e7b58bb8e27?w=600&h=400&fit=crop' },
+    { ar:'مكس بيري',        en:'MIX BERRY',         price:85,  img:'https://images.unsplash.com/photo-1490474418585-ba9bad8fd0ea?w=600&h=400&fit=crop' },
+    { ar:'فانيليا',         en:'VANILLA',           price:70,  img:'https://images.unsplash.com/photo-1572490122747-3368b75b5f5e?w=600&h=400&fit=crop' },
+    { ar:'توينكيز',         en:'TWINKIES',          price:80,  img:'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=600&h=400&fit=crop' },
+    { ar:'وايت شوكلت',      en:'WHITE CHOCOLATE',   price:80,  img:'https://images.unsplash.com/photo-1517682555765-cc6c4e8d0a2f?w=600&h=400&fit=crop' },
+    { ar:'كراميل',          en:'CARAMEL',           price:70,  img:'https://images.unsplash.com/photo-1553361371-9b22f78e8b1d?w=600&h=400&fit=crop' },
+    { ar:'مانجا',           en:'MANGO',             price:75,  img:'https://images.unsplash.com/photo-1605027990121-cbae9e0642b2?w=600&h=400&fit=crop' },
+    { ar:'كيت كات',         en:'KIT KAT',           price:85,  img:'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&h=400&fit=crop' },
+    { ar:'فراولة',          en:'STRAWBERRY',        price:70,  img:'https://images.unsplash.com/photo-1615478503562-ec2d8aa0e24e?w=600&h=400&fit=crop' },
+    { ar:'هوهوز',           en:'HOHOS',             price:85,  img:'https://images.unsplash.com/photo-1576092768241-dec231879fc3?w=600&h=400&fit=crop' },
+    { ar:'نوتيلا',          en:'NUTELLA',           price:90,  img:'https://images.unsplash.com/photo-1582901956003-c27a43a1e90e?w=600&h=400&fit=crop' },
+    { ar:'اوريو',           en:'OREO',              price:90,  img:'https://images.unsplash.com/photo-1539888500857-e7f26048c10f?w=600&h=400&fit=crop' },
+    { ar:'لاجونا سجنتشر',   en:'LAGUNA SIGNATURE',  price:100, img:'https://images.unsplash.com/photo-1551751299-1b51cab2694c?w=600&h=400&fit=crop' },
+    { ar:'بستاشيو',         en:'PISTACHIO',         price:90,  img:'https://images.unsplash.com/photo-1521302080334-4bebac2763a6?w=600&h=400&fit=crop' },
+  ],
+  yogurt: [
+    { ar:'مانجا',           en:'MANGO',             price:55, img:'https://images.unsplash.com/photo-1488477181946-6428a0291777?w=600&h=400&fit=crop' },
+    { ar:'خوخ',             en:'PEACH',             price:60, img:'https://images.unsplash.com/photo-1571950006183-2e7b58bb8e27?w=600&h=400&fit=crop' },
+    { ar:'فراولة',          en:'STRAWBERRY',        price:55, img:'https://images.unsplash.com/photo-1615478503562-ec2d8aa0e24e?w=600&h=400&fit=crop' },
+    { ar:'بلو بيري',        en:'BLUEBERRY',         price:60, img:'https://images.unsplash.com/photo-1553361371-9b22f78e8b1d?w=600&h=400&fit=crop' },
+    { ar:'لاجونا سجنتشر',   en:'LAGUNA SIGNATURE',  price:75, img:'https://images.unsplash.com/photo-1551751299-1b51cab2694c?w=600&h=400&fit=crop' },
+    { ar:'اناناس',          en:'PINEAPPLE',         price:55, img:'https://images.unsplash.com/photo-1490474418585-ba9bad8fd0ea?w=600&h=400&fit=crop' },
+    { ar:'موز',             en:'BANANA',            price:60, img:'https://images.unsplash.com/photo-1603833665858-e61d17a86224?w=600&h=400&fit=crop' },
+    { ar:'عسل مكسرات',      en:'HONEY NUTS',        price:65, img:'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&h=400&fit=crop' },
+    { ar:'باشن فروت',       en:'PASSION FRUIT',     price:60, img:'https://images.unsplash.com/photo-1505252585461-04db1eb84625?w=600&h=400&fit=crop' },
+  ],
+  cans: [
+    { ar:'بيبسي',           en:'PEPSI',             price:30, img:'https://images.unsplash.com/photo-1629203851122-3726ecdf080e?w=600&h=400&fit=crop' },
+    { ar:'فانتا',           en:'FANTA',             price:30, img:'https://images.unsplash.com/photo-1527960471264-932f39eb5846?w=600&h=400&fit=crop' },
+    { ar:'فيروز',           en:'VIMTO',             price:35, img:'https://images.unsplash.com/photo-1544787219-7f47ccb76574?w=600&h=400&fit=crop' },
+    { ar:'سبرايت',          en:'SPRITE',            price:30, img:'https://images.unsplash.com/photo-1563227812-0ea4c22e6cc8?w=600&h=400&fit=crop' },
+    { ar:'تويست',           en:'TWIST',             price:30, img:'https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=600&h=400&fit=crop' },
+    { ar:'ماونتن ديو',      en:'MOUNTAIN DEW',      price:30, img:'https://images.unsplash.com/photo-1576200836524-a8d38e1addf5?w=600&h=400&fit=crop' },
+    { ar:'بيبسي دايت',      en:'PEPSI DIET',        price:30, img:'https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=600&h=400&fit=crop' },
+    { ar:'سفن اب',          en:'7UP',               price:30, img:'https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=600&h=400&fit=crop' },
+    { ar:'في كولا',         en:'V COLA',            price:35, img:'https://images.unsplash.com/photo-1629203851122-3726ecdf080e?w=600&h=400&fit=crop' },
+    { ar:'ميرندا',          en:'MIRINDA',           price:30, img:'https://images.unsplash.com/photo-1534353473418-4cfa0c56b795?w=600&h=400&fit=crop' },
+    { ar:'شويبس',           en:'SCHWEPPES',         price:30, img:'https://images.unsplash.com/photo-1527960471264-932f39eb5846?w=600&h=400&fit=crop' },
+    { ar:'فيوري',           en:'FIORI',             price:30, img:'https://images.unsplash.com/photo-1563227812-0ea4c22e6cc8?w=600&h=400&fit=crop' },
+    { ar:'ريد بول',         en:'RED BULL',          price:75, img:'https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?w=600&h=400&fit=crop' },
+    { ar:'بيريل',           en:'BIRELL',            price:35, img:'https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=600&h=400&fit=crop' },
+    { ar:'مونستر',          en:'MONSTER',           price:75, img:'https://images.unsplash.com/photo-1617043786394-f977fa12eddf?w=600&h=400&fit=crop' },
+  ],
+  popcorn: [
+    { ar:'ملح',             en:'SALT',              price:20, img:'https://images.unsplash.com/photo-1578849278619-e73505e9610f?w=600&h=400&fit=crop' },
+    { ar:'كاتشب',           en:'KETCHUP',           price:25, img:'https://images.unsplash.com/photo-1627308595229-7830a5c18eff?w=600&h=400&fit=crop' },
+    { ar:'كراميل',          en:'CARAMEL',           price:25, img:'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=600&h=400&fit=crop' },
+    { ar:'جبنه',            en:'CHEESE',            price:25, img:'https://images.unsplash.com/photo-1585647347384-2593bc35786b?w=600&h=400&fit=crop' },
+    { ar:'شطه',             en:'SPICY',             price:25, img:'https://images.unsplash.com/photo-1599490659213-e2b9527bd087?w=600&h=400&fit=crop' },
+  ],
+};
+
+// WA number — change this later
+const WA = 'XXXXXXXXXX';
+const WA_MSG = encodeURIComponent('مرحباً، أريد الطلب من لاجونا دبي 🌊');
+
+// ═══ BUILD HERO CATEGORY BUTTONS ═══
+function buildHeroCats() {
+  const container = document.getElementById('heroCats');
+  container.innerHTML = CATS.map(c =>
+    `<button class="cat-btn" onclick="showSection('${c.key}')">${c.hero}</button>`
+  ).join('');
+}
+
+// ═══ BUILD A SINGLE QUICK-NAV GRID (jump to other categories, shown at the bottom of every section) ═══
+function buildQuickNavHTML(currentKey) {
+  const buttons = [
+    `<button class="cat-btn main" onclick="goBack()">القائمة الرئيسية ⬅</button>`,
+    ...CATS.filter(c => c.key !== currentKey).map(c =>
+      `<button class="cat-btn" onclick="showSection('${c.key}')">${c.hero}</button>`
+    )
+  ];
+  return `
+    <div class="quick-nav">
+      <div class="quick-nav-title">تصفح أقسام أخرى</div>
+      <div class="quick-nav-grid">${buttons.join('')}</div>
+    </div>
+  `;
+}
+
+// ═══ BUILD ALL SECTIONS (header + item cards + quick-nav) ═══
+function buildSections() {
+  const wrapper = document.getElementById('itemsWrapper');
+  wrapper.innerHTML = CATS.map(c => {
+    const items = MENU[c.key] || [];
+    const cards = items.map(item => `
+      <div class="item-card">
+        <div class="item-img-wrap">
+          <img src="${item.img}" alt="${item.ar}" loading="lazy" onerror="this.style.background='#1a2a3a'">
+        </div>
+        <div class="item-text-block">
+          <div class="item-price-tag">${item.price}<span class="unit"> ج.م</span></div>
+          <div class="item-name-en">${item.en}</div>
+          <div class="item-name-ar">${item.ar}</div>
+        </div>
+        <a class="order-btn" href="https://wa.me/${WA}?text=${WA_MSG}%20-%20${encodeURIComponent(item.ar)}" target="_blank">
+          <span class="wa-icon">📞</span>
+          <span>ORDER NOW</span>
+        </a>
+      </div>
+    `).join('');
+
+    return `
+      <div class="items-section" id="sec-${c.key}">
+        <div class="section-head">
+          <button class="back-btn" onclick="goBack()">↩ رجوع</button>
+          <div class="sec-title">${c.title}</div>
+          <div class="sec-divider"></div>
+        </div>
+        <div id="cards-${c.key}">${cards}</div>
+        ${buildQuickNavHTML(c.key)}
+      </div>
+    `;
+  }).join('');
+}
+
+buildHeroCats();
+buildSections();
+
+// ═══ Navigation ═══
+const hero = document.getElementById('heroPage');
+
+function showSection(cat) {
+  hero.style.display = 'none';
+  document.querySelectorAll('.items-section').forEach(s => s.classList.remove('active'));
+  const target = document.getElementById('sec-' + cat);
+  if (target) {
+    target.classList.add('active');
+    window.scrollTo(0, 0);
+  }
+}
+
+function goBack() {
+  document.querySelectorAll('.items-section').forEach(s => s.classList.remove('active'));
+  hero.style.display = '';
+  window.scrollTo(0, 0);
+}
+</script>
+</body>
+</html>

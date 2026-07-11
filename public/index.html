@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Bot — اختبار المحادثة</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Segoe UI', Tahoma, sans-serif; background: #e5ddd5; height: 100vh; display: flex; justify-content: center; align-items: center; }
+.container { width: 420px; height: 90vh; background: #efeae2; border-radius: 12px; display: flex; flex-direction: column; box-shadow: 0 4px 24px rgba(0,0,0,.15); overflow: hidden; }
+.header { background: #075e54; color: #fff; padding: 16px 20px; text-align: center; font-size: 15px; }
+.header small { display: block; font-size: 11px; opacity: .8; margin-top: 4px; }
+.phone-bar { display: flex; padding: 8px 12px; background: #fff; border-bottom: 1px solid #ddd; gap: 6px; }
+.phone-bar label { font-size: 12px; color: #667; white-space: nowrap; align-self: center; }
+.phone-bar input { flex: 1; padding: 6px 10px; border: 1px solid #ccc; border-radius: 6px; font-size: 13px; direction: ltr; }
+.chat { flex: 1; overflow-y: auto; padding: 12px 16px; display: flex; flex-direction: column; gap: 6px; background: #e5ddd5; background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200"><circle cx="30" cy="30" r="20" fill="rgba(0,0,0,.02)"/><circle cx="100" cy="80" r="40" fill="rgba(0,0,0,.02)"/><circle cx="170" cy="20" r="25" fill="rgba(0,0,0,.02)"/><circle cx="50" cy="150" r="30" fill="rgba(0,0,0,.02)"/><circle cx="150" cy="140" r="35" fill="rgba(0,0,0,.02)"/></svg>'); background-repeat: repeat; background-size: 180px; }
+.bubble { max-width: 80%; padding: 8px 14px; border-radius: 8px; font-size: 14px; line-height: 1.5; word-wrap: break-word; position: relative; box-shadow: 0 1px 1px rgba(0,0,0,.08); }
+.bubble.user { align-self: flex-start; background: #d9fdd3; border-bottom-right-radius: 3px; }
+.bubble.bot { align-self: flex-end; background: #fff; border-bottom-left-radius: 3px; }
+.bubble .time { font-size: 10px; color: #999; margin-top: 4px; text-align: left; direction: ltr; }
+.bubble.user .time { text-align: right; }
+.input-bar { display: flex; padding: 10px 12px; background: #f0f0f0; border-top: 1px solid #ddd; gap: 8px; }
+.input-bar input { flex: 1; padding: 10px 14px; border: none; border-radius: 24px; font-size: 14px; outline: none; background: #fff; }
+.input-bar button { width: 44px; height: 44px; border: none; border-radius: 50%; background: #075e54; color: #fff; font-size: 20px; cursor: pointer; display: flex; align-items: center; justify-content: center; }
+.input-bar button:disabled { opacity: .5; cursor: not-allowed; }
+.typing { align-self: flex-end; background: #fff; padding: 8px 14px; border-radius: 8px; border-bottom-left-radius: 3px; font-size: 13px; color: #888; box-shadow: 0 1px 1px rgba(0,0,0,.08); }
+@keyframes dots { 0%,20% { opacity: 0; } 50% { opacity: 1; } 100% { opacity: 0; } }
+.typing span { animation: dots 1.4s infinite; } .typing span:nth-child(2) { animation-delay: .2s; } .typing span:nth-child(3) { animation-delay: .4s; }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    AI Bot 🤖
+    <small>محاكاة محادثة واتساب — الأوامر: مهامي • تم [رقم] • ملخصي</small>
+  </div>
+  <div class="phone-bar">
+    <label>رقمك:</label>
+    <input id="phone" type="tel" placeholder="201234567890" value="201001234567">
+  </div>
+  <div class="chat" id="chat" role="log" aria-live="polite"></div>
+  <div class="input-bar">
+    <input id="input" type="text" placeholder="اكتب رسالة..." autofocus>
+    <button id="send" aria-label="إرسال">➤</button>
+  </div>
+</div>
+<script>
+const chat = document.getElementById('chat');
+const input = document.getElementById('input');
+const sendBtn = document.getElementById('send');
+const phoneInput = document.getElementById('phone');
+
+function addBubble(text, role) {
+  const div = document.createElement('div');
+  div.className = `bubble ${role}`;
+  const now = new Date();
+  const time = now.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', hour12: false });
+  div.innerHTML = text.replace(/\n/g, '<br>') + `<div class="time">${time}</div>`;
+  chat.appendChild(div);
+  chat.scrollTop = chat.scrollHeight;
+}
+
+function showTyping() {
+  const div = document.createElement('div');
+  div.className = 'typing';
+  div.id = 'typing';
+  div.innerHTML = 'يكتب<span>.</span><span>.</span><span>.</span>';
+  chat.appendChild(div);
+  chat.scrollTop = chat.scrollHeight;
+}
+
+function hideTyping() {
+  const el = document.getElementById('typing');
+  if (el) el.remove();
+}
+
+async function sendMessage() {
+  const text = input.value.trim();
+  if (!text) return;
+
+  const phone = phoneInput.value.trim();
+  if (!phone) {
+    alert('من فضلك أدخل رقم الهاتف');
+    return;
+  }
+
+  input.value = '';
+  sendBtn.disabled = true;
+  addBubble(text, 'user');
+  showTyping();
+
+  try {
+    const params = new URLSearchParams({ From: phone, Body: text });
+    const res = await fetch('/api/test/chat', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: params,
+    });
+    const data = await res.json();
+    hideTyping();
+    if (data.reply) addBubble(data.reply, 'bot');
+    else addBubble(`⚠️ خطأ: ${data.error || 'غير معروف'}`, 'bot');
+  } catch (err) {
+    hideTyping();
+    addBubble('⚠️ فشل الاتصال بالسيرفر', 'bot');
+  } finally {
+    sendBtn.disabled = false;
+    input.focus();
+  }
+}
+
+sendBtn.addEventListener('click', sendMessage);
+input.addEventListener('keydown', (e) => { if (e.key === 'Enter') sendMessage(); });
+
+// Welcome message
+addBubble('أهلاً بك 👋 اكتب رسالة عشان تختبر البوت', 'bot');
+</script>
+</body>
+</html>

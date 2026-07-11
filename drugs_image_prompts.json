@@ -1,0 +1,1374 @@
+[
+  {
+    "brand": "Ateno / Atelol",
+    "scientific": "Atenolol",
+    "category": "Antihypertensive",
+    "form": "Tablet",
+    "prompt": "Two blister packs of atenolol 50mg and 100mg tablets on white background, professional pharmaceutical product photography, clean clinical lighting, high detail, 8K, photorealistic, white label with blue stripes, each tablet imprinted with dosage marking, organized medical presentation"
+  },
+  {
+    "brand": "Atenoretic",
+    "scientific": "Atenolol + Amiloride + Hydrochlorothiazide",
+    "category": "Antihypertensive",
+    "form": "Tablet",
+    "prompt": "Box of atenolol combination tablets with diuretics, white and blue pharmaceutical packaging, tablets in blister pack, clean clinical product photography, white background, professional medical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Artagone",
+    "scientific": "Silymarin + Zinc + Vitamin B",
+    "category": "Liver Support Supplement",
+    "form": "Capsule",
+    "prompt": "Bottle of liver support supplement capsules, silymarin and zinc formula, green and white label, herbal supplement product photography, clean white background, professional pharmaceutical lighting, sharp focus, photorealistic, 8K"
+  },
+  {
+    "brand": "Arcalion / Arcalion Forte / Activate / Arca-zinc",
+    "scientific": "Sulbutiamine",
+    "category": "Nootropic",
+    "form": "Tablet",
+    "prompt": "Box of sulbutiamine nootropic tablets, brain energy supplement, red and silver pharmaceutical packaging, blister packs of tablets, clean clinical product photography, white background, sharp focus, photorealistic, professional lighting"
+  },
+  {
+    "brand": "Averozolid",
+    "scientific": "Linezolid",
+    "category": "Antibiotic",
+    "form": "Tablet",
+    "prompt": "Pharmaceutical box of linezolid antibiotic tablets, white and red packaging, blister pack with tablets, professional product photography, clean white background, clinical lighting, high detail, photorealistic, 8K"
+  },
+  {
+    "brand": "Azrolid / Azirowa / Unizithrin / Xithrone / Epizithro / Zithromax / Zithrokan / Zisrocin",
+    "scientific": "Azithromycin",
+    "category": "Antibiotic",
+    "form": "Tablet/Capsule",
+    "prompt": "Assortment of azithromycin antibiotic packages and blister packs, white and blue pharmaceutical boxes, tablets and capsules, professional product photography, clean white background, clinical lighting, sharp focus, photorealistic, 8K"
+  },
+  {
+    "brand": "Amigraine ADCO",
+    "scientific": "Caffeine + Dipyrone + Ergotamine",
+    "category": "Antimigraine",
+    "form": "Tablet",
+    "prompt": "Pharmaceutical box of migraine relief tablets, ergotamine combination, white and orange packaging, blister pack tablets, professional product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Amigrawest",
+    "scientific": "Zolmitriptan",
+    "category": "Antimigraine",
+    "form": "Tablet",
+    "prompt": "Box of zolmitriptan migraine tablets, white and teal pharmaceutical packaging, blister pack with orodispersible tablets, professional product photography, clean white background, clinical lighting, high detail, photorealistic"
+  },
+  {
+    "brand": "Antodine",
+    "scientific": "Famotidine",
+    "category": "Antacid / Hyperacidity",
+    "form": "Tablet",
+    "prompt": "Pharmaceutical box of famotidine antacid tablets, white and green packaging, blister pack with tablets, professional product photography, clean white background, clinical lighting, sharp focus, photorealistic, 8K"
+  },
+  {
+    "brand": "Antopral",
+    "scientific": "Pantoprazole",
+    "category": "Antacid / Hyperacidity",
+    "form": "Tablet",
+    "prompt": "Box of pantoprazole gastro-resistant tablets, white and purple pharmaceutical packaging, blister pack, professional product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Anafronil",
+    "scientific": "Clomipramine",
+    "category": "Antidepressant",
+    "form": "Capsule",
+    "prompt": "Pharmaceutical box of clomipramine antidepressant capsules, white and yellow packaging, blister pack with capsules, professional product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Augmentin / Amoclawin / Clavimox / Curam / Deltaclav / e-moxclav / hibiotic / julmentin / megamox / magnabiotic",
+    "scientific": "Amoxicillin + Clavulanic Acid",
+    "category": "Antibiotic",
+    "form": "Tablet / Suspension",
+    "prompt": "Collection of amoxicillin-clavulanic acid antibiotic packages, white and yellow boxes, blister packs with tablets and bottles of suspension, professional pharmaceutical product photography, clean white background, clinical lighting, sharp focus, photorealistic, 8K"
+  },
+  {
+    "brand": "A-viton",
+    "scientific": "Vitamin A",
+    "category": "Supplement",
+    "form": "Capsule",
+    "prompt": "Bottle of vitamin A supplement capsules, white and orange label, soft gelatin capsules, professional supplement product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Ator / Lipitor / Lipona / lipiless",
+    "scientific": "Atorvastatin",
+    "category": "Antihyperlipidemic",
+    "form": "Tablet",
+    "prompt": "Boxes of atorvastatin cholesterol-lowering tablets, white and red pharmaceutical packaging, blister packs, professional product photography, clean white background, clinical lighting, sharp focus, photorealistic, 8K"
+  },
+  {
+    "brand": "Atoreza",
+    "scientific": "Atorvastatin + Ezetimibe",
+    "category": "Antihyperlipidemic",
+    "form": "Tablet",
+    "prompt": "Pharmaceutical box of atorvastatin and ezetimibe combination tablets, white and blue packaging, blister pack, professional product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Aldomet / Alfadopa",
+    "scientific": "Methyldopa",
+    "category": "Antihypertensive (Pregnancy)",
+    "form": "Tablet",
+    "prompt": "Box of methyldopa antihypertensive tablets, white and green pharmaceutical packaging, blister pack, professional product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Alzental / Antizole / Bendax",
+    "scientific": "Albendazole",
+    "category": "Anthelmintic",
+    "form": "Tablet",
+    "prompt": "Pharmaceutical box of albendazole anti-worm tablets, white and yellow packaging, blister pack, professional product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Amaryl M / Diavance",
+    "scientific": "Glimepiride + Metformin",
+    "category": "Antidiabetic",
+    "form": "Tablet",
+    "prompt": "Box of glimepiride and metformin combination antidiabetic tablets, white and blue pharmaceutical packaging, blister pack, professional product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Amrizole",
+    "scientific": "Metronidazole",
+    "category": "Antiprotozoal",
+    "form": "Tablet",
+    "prompt": "Pharmaceutical box of metronidazole antiprotozoal tablets, white and green packaging, blister pack, professional product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Amipride",
+    "scientific": "Amisulpride",
+    "category": "Antipsychotic",
+    "form": "Tablet",
+    "prompt": "Box of amisulpride antipsychotic tablets, white and lilac pharmaceutical packaging, blister pack, professional product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Antox",
+    "scientific": "Selenium + Vitamins",
+    "category": "Antioxidant",
+    "form": "Capsule",
+    "prompt": "Bottle of selenium and vitamins antioxidant supplement capsules, white and orange label, professional supplement photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Antinal / Diax",
+    "scientific": "Nifuroxazide",
+    "category": "Antidiarrheal",
+    "form": "Capsule / Suspension",
+    "prompt": "Pharmaceutical box of nifuroxazide antidiarrheal capsules and suspension bottle, white and orange packaging, professional product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Anoxicam",
+    "scientific": "Tenoxicam",
+    "category": "Analgesic",
+    "form": "Tablet",
+    "prompt": "Box of tenoxicam analgesic tablets, white and red pharmaceutical packaging, blister pack, professional product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Aironyl",
+    "scientific": "Terbutaline",
+    "category": "Bronchodilator",
+    "form": "Tablet",
+    "prompt": "Pharmaceutical box of terbutaline bronchodilator tablets, white and light blue packaging, blister pack, professional product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Aldactone",
+    "scientific": "Spironolactone",
+    "category": "Diuretic",
+    "form": "Tablet",
+    "prompt": "Box of spironolactone diuretic tablets, white and orange pharmaceutical packaging, blister pack, professional product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Allercet / Clearest / Decancit",
+    "scientific": "Pseudoephedrine + Cetirizine",
+    "category": "Common Cold & Flu",
+    "form": "Tablet",
+    "prompt": "Box of cold and flu relief tablets with pseudoephedrine and cetirizine, white and red pharmaceutical packaging, blister pack, professional product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Arthrofast / Antiflam / Anuva / Divide / Declophen / Diclac / Epifenac / Flotac / Olfen / Rheumafen / Voltarin / Dicloferaze / Diclonatrium / Rheumarene / Vantomor / Adwiflam / Cataflam / Diclasium / Dolphin K / Flamifast / Oflam / Potafen / Vastaflam / Rapiflam / Unirapecure / Rapidus / Arthineur",
+    "scientific": "Diclofenac Sodium / Diclofenac Potassium",
+    "category": "Analgesic / Anti-rheumatic",
+    "form": "Tablet / Capsule",
+    "prompt": "Assortment of diclofenac pain relief tablets and capsules boxes, white and red pharmaceutical packaging, blister packs, professional product photography, clean white background, clinical lighting, sharp focus, photorealistic, 8K"
+  },
+  {
+    "brand": "Avosoya",
+    "scientific": "Avocado Oil + Soy + Vitamins",
+    "category": "Supplement",
+    "form": "Capsule",
+    "prompt": "Bottle of avocado oil and soy supplement capsules, green and white label, natural supplement product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Anallerge / Allergex",
+    "scientific": "Chlorpheniramine",
+    "category": "Antihistamine",
+    "form": "Tablet",
+    "prompt": "Pharmaceutical box of chlorpheniramine antihistamine tablets, white and green packaging, blister pack, professional product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Amebazole",
+    "scientific": "Secnidazole",
+    "category": "Antiprotozoal",
+    "form": "Tablet",
+    "prompt": "Box of secnidazole antiprotozoal tablets, white and yellow pharmaceutical packaging, blister pack, professional product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Asmolin",
+    "scientific": "Ephedrine + Phenobarbitone + Theophylline",
+    "category": "Antiasthmatic",
+    "form": "Tablet",
+    "prompt": "Pharmaceutical box of antiasthmatic combination tablets, white and blue packaging, blister pack, professional product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Atshi",
+    "scientific": "Paracetamol + Loratadine + Pseudoephedrine",
+    "category": "Common Cold & Flu",
+    "form": "Tablet",
+    "prompt": "Box of cold and flu relief combination tablets, white and orange pharmaceutical packaging, blister pack, professional product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Aprovel",
+    "scientific": "Irbesartan",
+    "category": "Antihypertensive",
+    "form": "Tablet",
+    "prompt": "Pharmaceutical box of irbesartan antihypertensive tablets, white and green packaging, blister pack, professional product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Asmakast / Kokast / Kast",
+    "scientific": "Montelukast",
+    "category": "Antiasthmatic",
+    "form": "Tablet / Chewable Tablet",
+    "prompt": "Box of montelukast antiasthmatic tablets, white and orange pharmaceutical packaging, blister pack with chewable tablets, professional product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Amitriptine",
+    "scientific": "Amitriptyline",
+    "category": "Antidepressant",
+    "form": "Tablet",
+    "prompt": "Pharmaceutical box of amitriptyline antidepressant tablets, white and blue packaging, blister pack, professional product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Aciclovir",
+    "scientific": "Acyclovir",
+    "category": "Antiviral",
+    "form": "Tablet",
+    "prompt": "Box of acyclovir antiviral tablets, white and blue pharmaceutical packaging, blister pack, professional product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Alukast",
+    "scientific": "Zafirlukast",
+    "category": "Antiasthmatic",
+    "form": "Tablet",
+    "prompt": "Pharmaceutical box of zafirlukast antiasthmatic tablets, white and purple packaging, blister pack, professional product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Alphafen",
+    "scientific": "Ibuprofen",
+    "category": "Analgesic",
+    "form": "Tablet",
+    "prompt": "Box of ibuprofen pain relief tablets, white and orange pharmaceutical packaging, blister pack, professional product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Altiazem",
+    "scientific": "Diltiazem",
+    "category": "Vasodilator",
+    "form": "Tablet",
+    "prompt": "Pharmaceutical box of diltiazem vasodilator tablets, white and light blue packaging, blister pack, professional product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Alzmenda",
+    "scientific": "Memantine",
+    "category": "Alzheimer's Treatment",
+    "form": "Tablet",
+    "prompt": "Box of memantine Alzheimer's treatment tablets, white and purple pharmaceutical packaging, blister pack, professional product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Alertam",
+    "scientific": "Fexofenadine",
+    "category": "Antihistamine",
+    "form": "Tablet",
+    "prompt": "Pharmaceutical box of fexofenadine antihistamine tablets, white and red packaging, blister pack, professional product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Astin",
+    "scientific": "Ebastine",
+    "category": "Antihistamine",
+    "form": "Tablet",
+    "prompt": "Box of ebastine antihistamine tablets, white and teal pharmaceutical packaging, blister pack, professional product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Arthfree",
+    "scientific": "Leflunomide",
+    "category": "Antirheumatic",
+    "form": "Tablet",
+    "prompt": "Pharmaceutical box of leflunomide antirheumatic tablets, white and orange packaging, blister pack, professional product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Atarax",
+    "scientific": "Hydroxyzine",
+    "category": "Antihistamine / Anxiolytic",
+    "form": "Tablet",
+    "prompt": "Box of hydroxyzine antihistamine and anxiolytic tablets, white and blue pharmaceutical packaging, blister pack, professional product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Apexidone",
+    "scientific": "Risperidone",
+    "category": "Antipsychotic",
+    "form": "Tablet",
+    "prompt": "Pharmaceutical box of risperidone antipsychotic tablets, white and yellow packaging, blister pack, professional product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Achtenon",
+    "scientific": "Biperiden",
+    "category": "Antiparkinsonian",
+    "form": "Tablet",
+    "prompt": "Box of biperiden antiparkinsonian tablets, white and green pharmaceutical packaging, blister pack, professional product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Amocerebral",
+    "scientific": "Cinnarizine + Dimenhydrinate",
+    "category": "Antivertigo",
+    "form": "Capsule",
+    "prompt": "Pharmaceutical box of antivertigo capsules with cinnarizine and dimenhydrinate, white and orange packaging, blister pack, professional product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Actozone / Diabetonorm",
+    "scientific": "Pioglitazone",
+    "category": "Antidiabetic",
+    "form": "Tablet",
+    "prompt": "Box of pioglitazone antidiabetic tablets, white and blue pharmaceutical packaging, blister pack, professional product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Amophage",
+    "scientific": "Metformin",
+    "category": "Antidiabetic",
+    "form": "Tablet",
+    "prompt": "Pharmaceutical box of metformin antidiabetic tablets, white and green packaging, blister pack, professional product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Adancor",
+    "scientific": "Nicorandil",
+    "category": "Anti-ischemic",
+    "form": "Tablet",
+    "prompt": "Box of nicorandil anti-ischemic tablets, white and red pharmaceutical packaging, blister pack, professional product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Aleride",
+    "scientific": "Cetirizine",
+    "category": "Antihistamine",
+    "form": "Tablet",
+    "prompt": "Box of cetirizine antihistamine tablets with distinctive blue and white packaging, blister pack with 10 tablets, professional product photography on white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Articu-safe",
+    "scientific": "Diacerein",
+    "category": "Anti-inflammatory",
+    "form": "Capsule",
+    "prompt": "Box of diacerein anti-inflammatory capsules, white and orange pharmaceutical packaging, blister pack, professional product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Ampicillin",
+    "scientific": "Ampicillin",
+    "category": "Antibiotic",
+    "form": "Capsule",
+    "prompt": "Pharmaceutical box of ampicillin antibiotic capsules, white and red packaging, blister pack, professional product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Andouristat",
+    "scientific": "Febuxostat",
+    "category": "Anti-gout",
+    "form": "Tablet",
+    "prompt": "Box of febuxostat anti-gout tablets, white and teal pharmaceutical packaging, blister pack, professional product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Azgovanc",
+    "scientific": "Omeprazole + Sodium Bicarbonate",
+    "category": "Antacid / Hyperacidity",
+    "form": "Capsule",
+    "prompt": "Pharmaceutical box of omeprazole with sodium bicarbonate capsules, white and purple packaging, blister pack, professional product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Alxoquine",
+    "scientific": "Chloroquine",
+    "category": "Antimalarial",
+    "form": "Tablet",
+    "prompt": "Box of chloroquine antimalarial tablets, white and yellow pharmaceutical packaging, blister pack, professional product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Allerban / Ketoti Pharco / Zaditen",
+    "scientific": "Ketotifen",
+    "category": "Antihistamine",
+    "form": "Tablet / Capsule",
+    "prompt": "Pharmaceutical box of ketotifen antihistamine tablets and capsules, white and green packaging, blister pack, professional product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Asmacid",
+    "scientific": "Theophylline",
+    "category": "Antiasthmatic",
+    "form": "Tablet",
+    "prompt": "Box of theophylline antiasthmatic tablets, white and blue pharmaceutical packaging, blister pack, professional product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Adwinerve",
+    "scientific": "Vitamin B Complex",
+    "category": "Nerve Tonic",
+    "form": "Tablet / Capsule",
+    "prompt": "Bottle of vitamin B complex nerve tonic tablets, white and yellow label, professional supplement product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Aripirazole / Arepexane",
+    "scientific": "Aripiprazole",
+    "category": "Antipsychotic",
+    "form": "Tablet",
+    "prompt": "Pharmaceutical box of aripiprazole antipsychotic tablets, white and orange packaging, blister pack, professional product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Amofluxin",
+    "scientific": "Amoxicillin + Flucloxacillin",
+    "category": "Antibiotic",
+    "form": "Capsule",
+    "prompt": "Box of amoxicillin and flucloxacillin antibiotic capsules, white and red pharmaceutical packaging, blister pack, professional product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Adolor",
+    "scientific": "Ketorolac Tromethamine",
+    "category": "Analgesic (Strong)",
+    "form": "Tablet / Injection",
+    "prompt": "Pharmaceutical box of ketorolac strong analgesic tablets and ampoules, white and red packaging, professional product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Act Life",
+    "scientific": "Chromium",
+    "category": "Supplement",
+    "form": "Capsule",
+    "prompt": "Bottle of chromium supplement capsules, white and silver label, professional supplement product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Angiosartan Plus",
+    "scientific": "Olmesartan + Hydrochlorothiazide",
+    "category": "Antihypertensive",
+    "form": "Tablet",
+    "prompt": "Box of olmesartan and hydrochlorothiazide combination tablets, white and green pharmaceutical packaging, blister pack, professional product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Amaglust / Zanoglide",
+    "scientific": "Pioglitazone + Glimepiride",
+    "category": "Antidiabetic",
+    "form": "Tablet",
+    "prompt": "Pharmaceutical box of pioglitazone and glimepiride antidiabetic tablets, white and blue packaging, blister pack, professional product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Alkapride",
+    "scientific": "Itopride",
+    "category": "GIT Motility Stimulant",
+    "form": "Tablet",
+    "prompt": "Box of itopride gastrointestinal motility stimulant tablets, white and orange pharmaceutical packaging, blister pack, professional product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Arythrex",
+    "scientific": "Celecoxib",
+    "category": "Analgesic / Anti-inflammatory",
+    "form": "Capsule",
+    "prompt": "Pharmaceutical box of celecoxib anti-inflammatory capsules, white and blue packaging, blister pack, professional product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Atacand Plus / Geocand Plus",
+    "scientific": "Candesartan + Hydrochlorothiazide",
+    "category": "Antihypertensive",
+    "form": "Tablet",
+    "prompt": "Box of candesartan and hydrochlorothiazide combination tablets, white and orange pharmaceutical packaging, blister pack, professional product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Apifortyl",
+    "scientific": "Minerals + Vitamins",
+    "category": "Anti-fatigue",
+    "form": "Capsule",
+    "prompt": "Bottle of multivitamin and minerals anti-fatigue supplement capsules, white and red label, professional supplement product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Abimol / Adol / Panadol / Paramol / Novaldol / Cetal",
+    "scientific": "Paracetamol",
+    "category": "Analgesic / Antipyretic",
+    "form": "Tablet",
+    "prompt": "Assortment of paracetamol pain relief and fever reducer boxes, white and blue pharmaceutical packaging, blister packs, professional product photography, clean white background, clinical lighting, sharp focus, photorealistic, 8K"
+  },
+  {
+    "brand": "Bienadol / Jencafemol / Adole Extra / Panadol Extra / Abimol Extra / Pronto Plus / Vetocetamol",
+    "scientific": "Paracetamol + Caffeine",
+    "category": "Analgesic",
+    "form": "Tablet",
+    "prompt": "Boxes of paracetamol with caffeine extra strength pain relief tablets, white and red pharmaceutical packaging, blister packs, professional product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Alphintern / Ambezim",
+    "scientific": "Chymotrypsin + Trypsin",
+    "category": "Anti-edema / Anti-swelling",
+    "form": "Tablet",
+    "prompt": "Pharmaceutical box of proteolytic enzymes tablets for swelling and edema, white and orange packaging, blister pack, professional product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Allear",
+    "scientific": "Levocetirizine",
+    "category": "Antihistamine",
+    "form": "Tablet",
+    "prompt": "Box of levocetirizine antihistamine tablets, white and blue pharmaceutical packaging, blister pack, professional product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Amilo / Amavasc / Amlodipine / Alkapress / Windipine",
+    "scientific": "Amlodipine",
+    "category": "Antihypertensive",
+    "form": "Tablet",
+    "prompt": "Assortment of amlodipine antihypertensive tablets boxes, white and blue pharmaceutical packaging, blister packs, professional product photography, clean white background, clinical lighting, sharp focus, photorealistic, 8K"
+  },
+  {
+    "brand": "Alzac",
+    "scientific": "Fluoxetine",
+    "category": "Antidepressant",
+    "form": "Capsule",
+    "prompt": "Pharmaceutical box of fluoxetine antidepressant capsules, white and green packaging, blister pack, professional product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Anticox",
+    "scientific": "Meloxicam",
+    "category": "Analgesic / Anti-inflammatory",
+    "form": "Tablet",
+    "prompt": "Box of meloxicam anti-inflammatory tablets, white and orange pharmaceutical packaging, blister pack, professional product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Alfacef / Alfaspect",
+    "scientific": "Levofloxacin",
+    "category": "Antibiotic",
+    "form": "Tablet",
+    "prompt": "Pharmaceutical box of levofloxacin antibiotic tablets, white and red packaging, blister pack, professional product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Aspocard / Aspirin / Aspocid / Aggrex / Jusprin / Ezacard / Rivo",
+    "scientific": "Acetylsalicylic Acid (Aspirin)",
+    "category": "Analgesic / Antiplatelet",
+    "form": "Tablet",
+    "prompt": "Assortment of aspirin tablets boxes, white and red pharmaceutical packaging, blister packs with low-dose and regular aspirin, professional product photography, clean white background, clinical lighting, sharp focus, photorealistic, 8K"
+  },
+  {
+    "brand": "Bone Care / Bone One / One Alpha",
+    "scientific": "Alfacalcidol",
+    "category": "Osteoporosis Treatment",
+    "form": "Capsule",
+    "prompt": "Boxes of alfacalcidol vitamin D analog capsules for bone health, white and green pharmaceutical packaging, blister packs, professional product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Baclofen / Mylobac",
+    "scientific": "Baclofen",
+    "category": "Muscle Relaxant",
+    "form": "Tablet",
+    "prompt": "Pharmaceutical box of baclofen muscle relaxant tablets, white and orange packaging, blister pack, professional product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Blokium / Blokium DIU / Blokatens",
+    "scientific": "Atenolol / Atenolol + Chlorthalidone / Amlodipine + Valsartan",
+    "category": "Antihypertensive",
+    "form": "Tablet",
+    "prompt": "Assortment of beta-blocker and combination antihypertensive tablets boxes, white and blue pharmaceutical packaging, blister packs, professional product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Bio 1600",
+    "scientific": "Bee Propolis + Vitamin C + Menthol",
+    "category": "Supplement",
+    "form": "Tablet / Lozenge",
+    "prompt": "Box of bee propolis and vitamin C lozenges, white and yellow pharmaceutical packaging, professional product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Bonapex",
+    "scientific": "Alendronate",
+    "category": "Osteoporosis Treatment",
+    "form": "Tablet",
+    "prompt": "Pharmaceutical box of alendronate osteoporosis tablets, white and purple packaging, blister pack with weekly dosage, professional product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Block Alpha",
+    "scientific": "Tamsulosin",
+    "category": "Prostate Treatment",
+    "form": "Capsule",
+    "prompt": "Box of tamsulosin prostate treatment capsules, white and blue pharmaceutical packaging, blister pack with modified release capsules, professional product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Buspar / Brilliant",
+    "scientific": "Buspirone",
+    "category": "Antianxiety",
+    "form": "Tablet",
+    "prompt": "Pharmaceutical box of buspirone antianxiety tablets, white and green packaging, blister pack, professional product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Beco Forte",
+    "scientific": "Vitamin B Complex",
+    "category": "Nerve Tonic",
+    "form": "Tablet",
+    "prompt": "Bottle of vitamin B complex forte tablets, white and yellow label, professional supplement product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Biltricide",
+    "scientific": "Praziquantel",
+    "category": "Anthelmintic",
+    "form": "Tablet",
+    "prompt": "Pharmaceutical box of praziquantel anti-schistosomiasis tablets, white and orange packaging, blister pack, professional product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Bional",
+    "scientific": "Milk Thistle + Astragalus",
+    "category": "Hepatic Disorders",
+    "form": "Capsule",
+    "prompt": "Bottle of milk thistle and astragalus liver support capsules, green and white label, herbal supplement product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Brexin",
+    "scientific": "Piroxicam",
+    "category": "Analgesic / Anti-inflammatory",
+    "form": "Capsule",
+    "prompt": "Pharmaceutical box of piroxicam anti-inflammatory capsules, white and red packaging, blister pack, professional product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Bi Alkofan / Bi Profenid / Bi Ketogesic / Baskinta / Ketogesic / Ketoprek / Ketolgin / Ketoprofen",
+    "scientific": "Ketoprofen",
+    "category": "Analgesic / Anti-inflammatory",
+    "form": "Capsule / Tablet",
+    "prompt": "Assortment of ketoprofen pain relief capsules and tablets boxes, white and red pharmaceutical packaging, blister packs, professional product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Bambedil",
+    "scientific": "Bambuterol",
+    "category": "Bronchodilator",
+    "form": "Tablet / Syrup",
+    "prompt": "Pharmaceutical box of bambuterol bronchodilator tablets, white and light blue packaging, blister pack, professional product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Bronchaline",
+    "scientific": "Theophylline + Ephedrine + Hydroxyzine",
+    "category": "Antiasthmatic",
+    "form": "Capsule",
+    "prompt": "Box of antiasthmatic combination capsules, white and green pharmaceutical packaging, blister pack, professional product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Biperiden",
+    "scientific": "Biperiden",
+    "category": "Antiparkinsonian",
+    "form": "Tablet",
+    "prompt": "Pharmaceutical box of biperiden antiparkinsonian tablets, white and green packaging, blister pack, professional product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Budelizer",
+    "scientific": "Budesonide",
+    "category": "Bronchodilator / Antiasthmatic",
+    "form": "Inhaler / Capsule",
+    "prompt": "Box of budesonide asthma inhaler and capsules, white and blue pharmaceutical packaging, professional product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Biosrong",
+    "scientific": "Ginseng + Royal Jelly + Wheat Germ Oil",
+    "category": "General Tonic",
+    "form": "Capsule",
+    "prompt": "Bottle of ginseng and royal jelly general tonic capsules, gold and white label, natural supplement product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Bioglita Plus",
+    "scientific": "Metformin + Pioglitazone",
+    "category": "Antidiabetic",
+    "form": "Tablet",
+    "prompt": "Pharmaceutical box of metformin and pioglitazone antidiabetic tablets, white and blue packaging, blister pack, professional product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Bisocard Plus / Carvido Care",
+    "scientific": "Bisoprolol + Hydrochlorothiazide",
+    "category": "Antihypertensive",
+    "form": "Tablet",
+    "prompt": "Box of bisoprolol and hydrochlorothiazide combination tablets, white and blue pharmaceutical packaging, blister pack, professional product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Blue Ox",
+    "scientific": "Ginseng + Zinc",
+    "category": "Weight Loss",
+    "form": "Capsule",
+    "prompt": "Bottle of ginseng and zinc weight loss supplement capsules, blue and white label, professional supplement product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Bisolvon",
+    "scientific": "Bromhexine",
+    "category": "Mucolytic",
+    "form": "Tablet / Syrup",
+    "prompt": "Pharmaceutical box of bromhexine mucolytic expectorant tablets and syrup bottle, white and yellow packaging, professional product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Be Active",
+    "scientific": "Wheat Germ Oil",
+    "category": "Antioxidant",
+    "form": "Capsule",
+    "prompt": "Bottle of wheat germ oil antioxidant supplement capsules, yellow and white label, professional supplement product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Buscopan",
+    "scientific": "Hyoscine (Scopolamine)",
+    "category": "Antispasmodic",
+    "form": "Tablet",
+    "prompt": "Pharmaceutical box of hyoscine antispasmodic tablets, white and orange packaging, blister pack, professional product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Buscopan Compositu",
+    "scientific": "Hyoscine + Dipyrone",
+    "category": "Antispasmodic / Analgesic",
+    "form": "Tablet",
+    "prompt": "Box of hyoscine and dipyrone antispasmodic pain relief tablets, white and red pharmaceutical packaging, blister pack, professional product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Buscopan Plus",
+    "scientific": "Hyoscine + Paracetamol",
+    "category": "Antispasmodic / Analgesic",
+    "form": "Tablet",
+    "prompt": "Pharmaceutical box of hyoscine and paracetamol antispasmodic tablets, white and blue packaging, blister pack, professional product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Betacor",
+    "scientific": "Sotalol",
+    "category": "Antihypertensive / Antiarrhythmic",
+    "form": "Tablet",
+    "prompt": "Box of sotalol beta-blocker antiarrhythmic tablets, white and blue pharmaceutical packaging, blister pack, professional product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Bronch-vaxom",
+    "scientific": "Bacterial Lysate",
+    "category": "Immunity Enhancer",
+    "form": "Capsule",
+    "prompt": "Pharmaceutical box of bacterial lysate immune booster capsules, white and purple packaging, blister pack, professional product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Bee Tonic",
+    "scientific": "Royal Jelly + Bee Pollen + Bee Propolis",
+    "category": "Supplement",
+    "form": "Capsule",
+    "prompt": "Bottle of royal jelly, bee pollen, and bee propolis supplement capsules, gold and yellow label, natural supplement product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Bran",
+    "scientific": "Bran (Wheat Bran)",
+    "category": "Weight Loss / Fiber",
+    "form": "Granules",
+    "prompt": "Bag of wheat bran fiber supplement granules, brown and white packaging, natural product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Bistol / Bisocard / Concor / Egypro",
+    "scientific": "Bisoprolol",
+    "category": "Antihypertensive",
+    "form": "Tablet",
+    "prompt": "Assortment of bisoprolol beta-blocker tablets boxes, white and blue pharmaceutical packaging, blister packs, professional product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Burinex",
+    "scientific": "Bumetanide",
+    "category": "Diuretic",
+    "form": "Tablet",
+    "prompt": "Pharmaceutical box of bumetanide loop diuretic tablets, white and orange packaging, blister pack, professional product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Brufen / Profusol / Marcofen",
+    "scientific": "Ibuprofen",
+    "category": "Analgesic / Anti-inflammatory",
+    "form": "Tablet",
+    "prompt": "Boxes of ibuprofen pain relief tablets, white and orange pharmaceutical packaging, blister packs, professional product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Brufen Cold",
+    "scientific": "Ibuprofen + Pseudoephedrine",
+    "category": "Common Cold & Flu",
+    "form": "Tablet",
+    "prompt": "Pharmaceutical box of ibuprofen and pseudoephedrine cold relief tablets, white and red packaging, blister pack, professional product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Bristaflam",
+    "scientific": "Aceclofenac",
+    "category": "Analgesic / Anti-rheumatic",
+    "form": "Tablet",
+    "prompt": "Box of aceclofenac anti-inflammatory and anti-rheumatic tablets, white and orange pharmaceutical packaging, blister pack, professional product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Bilichol",
+    "scientific": "Borneol + Camphene + Cineol + Menthol + Menthone + Pinene",
+    "category": "Cholelithiasis / Biliary",
+    "form": "Capsule",
+    "prompt": "Pharmaceutical box of biliary and gallbladder support capsules with herbal essential oils, white and green packaging, blister pack, professional product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Biomox",
+    "scientific": "Amoxicillin",
+    "category": "Antibiotic",
+    "form": "Capsule",
+    "prompt": "Box of amoxicillin antibiotic capsules, white and red pharmaceutical packaging, blister pack, professional product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Bepra",
+    "scientific": "Rabeprazole",
+    "category": "Antacid / Hyperacidity",
+    "form": "Tablet",
+    "prompt": "Pharmaceutical box of rabeprazole gastro-resistant tablets, white and purple packaging, blister pack, professional product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Cymbatex",
+    "scientific": "Duloxetine",
+    "category": "Antidepressant",
+    "form": "Capsule",
+    "prompt": "Box of duloxetine antidepressant capsules, white and green pharmaceutical packaging, blister pack, professional product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Corasore",
+    "scientific": "Heptaminol",
+    "category": "Orthostatic Hypotension",
+    "form": "Tablet / Ampoule",
+    "prompt": "Pharmaceutical box of heptaminol orthostatic hypotension treatment tablets and ampoules, white and blue packaging, professional product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Clomid",
+    "scientific": "Clomiphene",
+    "category": "Ovulation Enhancer",
+    "form": "Tablet",
+    "prompt": "Box of clomiphene ovulation induction tablets, white and pink pharmaceutical packaging, blister pack, professional product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Colmediten / Colchicine",
+    "scientific": "Colchicine",
+    "category": "Anti-gout",
+    "form": "Tablet",
+    "prompt": "Pharmaceutical box of colchicine anti-gout tablets, white and orange packaging, blister pack, professional product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Calcimate",
+    "scientific": "Calcium Carbonate",
+    "category": "Calcium Supplement",
+    "form": "Tablet",
+    "prompt": "Bottle of calcium carbonate supplement tablets, white and green label, professional supplement product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Cidamex",
+    "scientific": "Acetazolamide",
+    "category": "Diuretic",
+    "form": "Tablet",
+    "prompt": "Pharmaceutical box of acetazolamide diuretic tablets, white and red packaging, blister pack, professional product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Cyncholine Plus",
+    "scientific": "Artichoke + Silymarin",
+    "category": "Liver Support",
+    "form": "Tablet",
+    "prompt": "Bottle of artichoke and silymarin liver support tablets, green and white label, herbal supplement product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Coenzyme (Q10)",
+    "scientific": "Coenzyme Q10",
+    "category": "Antioxidant",
+    "form": "Capsule",
+    "prompt": "Bottle of coenzyme Q10 antioxidant supplement capsules, red and white label, professional supplement product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Cidolut Nor",
+    "scientific": "Norethisterone",
+    "category": "Synthetic Estrogen / Cycle Regulation",
+    "form": "Tablet",
+    "prompt": "Pharmaceutical box of norethisterone hormone tablets, white and pink packaging, blister pack, professional product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Cidophage / Glucophage / Glucolight / Maxophage / Mepaphage",
+    "scientific": "Metformin",
+    "category": "Antidiabetic",
+    "form": "Tablet",
+    "prompt": "Assortment of metformin antidiabetic tablets boxes, white and blue pharmaceutical packaging, blister packs, professional product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Cidoviron",
+    "scientific": "Mesterolone",
+    "category": "Synthetic Androgen",
+    "form": "Tablet",
+    "prompt": "Pharmaceutical box of mesterolone androgen tablets, white and blue packaging, blister pack, professional product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Caredalud SR",
+    "scientific": "Tizanidine",
+    "category": "Muscle Relaxant",
+    "form": "Tablet",
+    "prompt": "Box of tizanidine sustained release muscle relaxant tablets, white and orange pharmaceutical packaging, blister pack, professional product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Cipramax",
+    "scientific": "Citalopram",
+    "category": "Antidepressant",
+    "form": "Tablet",
+    "prompt": "Pharmaceutical box of citalopram antidepressant tablets, white and green packaging, blister pack, professional product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Colovatil",
+    "scientific": "Sulpiride + Mebeverine",
+    "category": "Antiemetic / Antispasmodic",
+    "form": "Capsule",
+    "prompt": "Box of sulpiride and mebeverine antiemetic and antispasmodic capsules, white and orange pharmaceutical packaging, blister pack, professional product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Capotril / Capoten",
+    "scientific": "Captopril",
+    "category": "Antihypertensive",
+    "form": "Tablet",
+    "prompt": "Pharmaceutical box of captopril ACE inhibitor tablets, white and green packaging, blister pack, professional product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Clozapex",
+    "scientific": "Clozapine",
+    "category": "Antipsychotic",
+    "form": "Tablet",
+    "prompt": "Box of clozapine antipsychotic tablets, white and yellow pharmaceutical packaging, blister pack, professional product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Cetrak",
+    "scientific": "Cetirizine",
+    "category": "Antihistamine",
+    "form": "Tablet",
+    "prompt": "Pharmaceutical box of cetirizine antihistamine tablets, white and blue packaging, blister pack, professional product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Co-dilatrol",
+    "scientific": "Carvedilol + Hydrochlorothiazide",
+    "category": "Antihypertensive",
+    "form": "Tablet",
+    "prompt": "Box of carvedilol and hydrochlorothiazide combination tablets, white and blue pharmaceutical packaging, blister pack, professional product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Cardio-mep / Cordarone",
+    "scientific": "Amiodarone",
+    "category": "Antiarrhythmic",
+    "form": "Tablet",
+    "prompt": "Pharmaceutical box of amiodarone antiarrhythmic tablets, white and red packaging, blister pack, professional product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Cardura",
+    "scientific": "Doxazosin",
+    "category": "Antihypertensive / Prostate",
+    "form": "Tablet",
+    "prompt": "Box of doxazosin antihypertensive and prostate treatment tablets, white and blue pharmaceutical packaging, blister pack, professional product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Celebrex / Celecox / Arthrex",
+    "scientific": "Celecoxib",
+    "category": "Analgesic / Anti-inflammatory",
+    "form": "Capsule",
+    "prompt": "Boxes of celecoxib anti-inflammatory capsules, white and blue pharmaceutical packaging, blister packs, professional product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Combipres",
+    "scientific": "Enalapril + Hydrochlorothiazide",
+    "category": "Antihypertensive",
+    "form": "Tablet",
+    "prompt": "Pharmaceutical box of enalapril and hydrochlorothiazide combination tablets, white and green packaging, blister pack, professional product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Coloverin / Coloverin SR / Colospasmin / Colospasmin Forte / Duspatalin / Colona / Mepacolon / Spasmotalin Forte",
+    "scientific": "Mebeverine",
+    "category": "Antispasmodic",
+    "form": "Capsule / Tablet",
+    "prompt": "Assortment of mebeverine antispasmodic capsules and tablets for colon spasm, white and orange pharmaceutical packaging, blister packs, professional product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Coloverin A",
+    "scientific": "Mebeverine + Chlordiazepoxide",
+    "category": "Spastic Colon / Anxiolytic",
+    "form": "Capsule",
+    "prompt": "Pharmaceutical box of mebeverine and chlordiazepoxide capsules for irritable colon with anxiety, white and green packaging, blister pack, professional product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Coloverin D",
+    "scientific": "Mebeverine + Dimethicone",
+    "category": "Antispasmodic / Antiflatulence",
+    "form": "Capsule",
+    "prompt": "Box of mebeverine and dimethicone antispasmodic and antiflatulence capsules, white and orange pharmaceutical packaging, blister pack, professional product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Candalkan / Candesar",
+    "scientific": "Candesartan",
+    "category": "Antihypertensive",
+    "form": "Tablet",
+    "prompt": "Pharmaceutical box of candesartan antihypertensive tablets, white and orange packaging, blister pack, professional product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Caldin C",
+    "scientific": "Minerals and Vitamins",
+    "category": "Multivitamin Supplement",
+    "form": "Tablet",
+    "prompt": "Bottle of multivitamins and minerals supplement tablets, white and orange label, professional supplement product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Calcimax Plus",
+    "scientific": "Calcium + Vitamin D3",
+    "category": "Calcium Supplement / Bone Health",
+    "form": "Tablet",
+    "prompt": "Bottle of calcium and vitamin D3 bone health supplement tablets, white and green label, professional supplement product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Cipazole / Fladazole / Ciprodiazole",
+    "scientific": "Secnidazole / Ciprofloxacin + Metronidazole",
+    "category": "Antiprotozoal / Antibiotic",
+    "form": "Tablet",
+    "prompt": "Pharmaceutical boxes of antiprotozoal and antibiotic combination tablets, white and yellow packaging, blister packs, professional product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Cetafen",
+    "scientific": "Ibuprofen + Paracetamol",
+    "category": "Analgesic / Antipyretic",
+    "form": "Tablet",
+    "prompt": "Box of ibuprofen and paracetamol combination pain relief tablets, white and red pharmaceutical packaging, blister pack, professional product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Clopex / Clatex / Plavix / Myogrel",
+    "scientific": "Clopidogrel",
+    "category": "Antiplatelet",
+    "form": "Tablet",
+    "prompt": "Boxes of clopidogrel antiplatelet tablets, white and red pharmaceutical packaging, blister packs, professional product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Covaprendo",
+    "scientific": "Amlodipine + Perindopril",
+    "category": "Antihypertensive",
+    "form": "Tablet",
+    "prompt": "Pharmaceutical box of amlodipine and perindopril combination antihypertensive tablets, white and blue packaging, blister pack, professional product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Centravita Osteo",
+    "scientific": "Calcium and Vitamins",
+    "category": "Bone Care / Supplement",
+    "form": "Tablet",
+    "prompt": "Bottle of calcium and vitamins bone health supplement tablets, white and purple label, professional supplement product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Convagran",
+    "scientific": "Zonisamide",
+    "category": "Anticonvulsant",
+    "form": "Capsule",
+    "prompt": "Pharmaceutical box of zonisamide anticonvulsant capsules, white and red packaging, blister pack, professional product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Cal-mag",
+    "scientific": "Calcium and Magnesium",
+    "category": "Supplement",
+    "form": "Tablet",
+    "prompt": "Bottle of calcium and magnesium supplement tablets, white and blue label, professional supplement product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Cal-preg",
+    "scientific": "Calcium",
+    "category": "Pregnancy Supplement",
+    "form": "Tablet",
+    "prompt": "Bottle of calcium supplement for pregnancy tablets, white and pink label, professional supplement product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Cinnarizine / Stugron",
+    "scientific": "Cinnarizine",
+    "category": "Antivertigo",
+    "form": "Tablet",
+    "prompt": "Pharmaceutical box of cinnarizine antivertigo and motion sickness tablets, white and blue packaging, blister pack, professional product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Cervitam",
+    "scientific": "Piroxicam + Vincamine",
+    "category": "Cerebral Circulatory Enhancer",
+    "form": "Capsule",
+    "prompt": "Box of piroxicam and vincamine cerebral circulation capsules, white and red pharmaceutical packaging, blister pack, professional product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Carbapex",
+    "scientific": "Carbamazepine",
+    "category": "Anticonvulsant / Antineuralgic",
+    "form": "Tablet",
+    "prompt": "Pharmaceutical box of carbamazepine anticonvulsant and neuralgia tablets, white and orange packaging, blister pack, professional product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Cerebroforte / Cerebrocetam",
+    "scientific": "Piracetam",
+    "category": "Cerebral Circulatory / Nootropic",
+    "form": "Tablet / Capsule",
+    "prompt": "Boxes of piracetam nootropic and cerebral circulation tablets and capsules, white and blue pharmaceutical packaging, blister packs, professional product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Ciprocin / Cipromax / Ciproquin / Ciproxil / Cipro / Ciprobay / Ciprofar / Ciprofloxacin / Rancif / Serviflox / Ultracipro",
+    "scientific": "Ciprofloxacin",
+    "category": "Antibiotic (Broad spectrum)",
+    "form": "Tablet",
+    "prompt": "Assortment of ciprofloxacin broad spectrum antibiotic tablets boxes, white and red pharmaceutical packaging, blister packs, professional product photography, clean white background, clinical lighting, sharp focus, photorealistic, 8K"
+  },
+  {
+    "brand": "Cevamol",
+    "scientific": "Paracetamol + Vitamin C",
+    "category": "Analgesic / Antipyretic (Effervescent)",
+    "form": "Effervescent Tablet",
+    "prompt": "Box of paracetamol and vitamin C effervescent tablets, white and orange pharmaceutical packaging, tube with effervescent tablets, professional product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Crestor / Crestolip / Cholerose / Justechol / Novistoric / Rosuvast",
+    "scientific": "Rosuvastatin",
+    "category": "Antihyperlipidemic",
+    "form": "Tablet",
+    "prompt": "Boxes of rosuvastatin cholesterol-lowering tablets, white and red pharmaceutical packaging, blister packs, professional product photography, clean white background, clinical lighting, sharp focus, photorealistic, 8K"
+  },
+  {
+    "brand": "Cologest",
+    "scientific": "Anise and Peppermint Oil",
+    "category": "GIT Disturbance / Carminative",
+    "form": "Capsule",
+    "prompt": "Pharmaceutical box of anise and peppermint oil digestive capsules, white and green packaging, blister pack, professional product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Chito / Chromax / Chromium",
+    "scientific": "Chitosan / Chromium",
+    "category": "Weight Loss / Supplement",
+    "form": "Capsule",
+    "prompt": "Bottles of chitosan and chromium weight loss supplement capsules, white and orange labels, professional supplement product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Clindam",
+    "scientific": "Clindamycin",
+    "category": "Antibiotic",
+    "form": "Capsule",
+    "prompt": "Pharmaceutical box of clindamycin antibiotic capsules, white and red packaging, blister pack, professional product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Calcinex Plus",
+    "scientific": "Calcium + Vitamin D3",
+    "category": "Supplement",
+    "form": "Tablet",
+    "prompt": "Bottle of calcium and vitamin D3 supplement tablets, white and green label, professional supplement product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Chitocal",
+    "scientific": "Chitosan + Chromium + Vitamins",
+    "category": "Weight Loss",
+    "form": "Capsule",
+    "prompt": "Bottle of chitosan and chromium weight loss formula capsules, white and orange label, professional supplement product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Co-irbesartan / Irbezide / Irbedrin-diu",
+    "scientific": "Irbesartan + Hydrochlorothiazide",
+    "category": "Antihypertensive",
+    "form": "Tablet",
+    "prompt": "Boxes of irbesartan and hydrochlorothiazide combination antihypertensive tablets, white and green pharmaceutical packaging, blister packs, professional product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Cephoxin / Ceprex",
+    "scientific": "Cephalexin",
+    "category": "Antibiotic",
+    "form": "Capsule",
+    "prompt": "Pharmaceutical box of cephalexin antibiotic capsules, white and red packaging, blister pack, professional product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Calcitron",
+    "scientific": "Minerals and Vitamins",
+    "category": "Multivitamin Supplement",
+    "form": "Tablet",
+    "prompt": "Bottle of multivitamins and minerals comprehensive supplement tablets, white and orange label, professional supplement product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Actrapid / Humulin R / Novorapid",
+    "scientific": "Regular Insulin / Insulin Aspart",
+    "category": "Insulin (Short Acting / Rapid Acting)",
+    "form": "Injection (Vial / Pen)",
+    "prompt": "Insulin vials and prefilled pens for rapid-acting and short-acting insulin, white and blue pharmaceutical packaging, professional medical product photography, clean white background, clinical lighting, sharp focus, photorealistic, 8K"
+  },
+  {
+    "brand": "Apidra (Glulisine) / Humalog (Lispro)",
+    "scientific": "Insulin Glulisine / Insulin Lispro",
+    "category": "Insulin (Ultra Rapid Acting)",
+    "form": "Injection (Pen)",
+    "prompt": "Ultra-rapid acting insulin prefilled pens, white and orange pharmaceutical packaging, professional medical product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Insulatard / Humulin N",
+    "scientific": "Isophane Insulin (NPH)",
+    "category": "Insulin (Intermediate Acting)",
+    "form": "Injection (Vial / Pen)",
+    "prompt": "Intermediate-acting insulin vials and prefilled pens, white and green pharmaceutical packaging, professional medical product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Avastin",
+    "scientific": "Bevacizumab",
+    "category": "Cancer (Brain, Colon, Rectal)",
+    "form": "Injection (Vial)",
+    "prompt": "Pharmaceutical vial of bevacizumab cancer treatment injection, white and red label, professional medical product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Bleocin",
+    "scientific": "Bleomycin",
+    "category": "Cancer (Bladder)",
+    "form": "Injection (Vial)",
+    "prompt": "Pharmaceutical vial of bleomycin chemotherapy injection, white and blue label, professional medical product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Decapeptyl 0.1 / CR",
+    "scientific": "Triptorelin",
+    "category": "Cancer (Breast) / GnRH Agonist",
+    "form": "Injection (Vial)",
+    "prompt": "Pharmaceutical box and vial of triptorelin GnRH agonist injection, white and green packaging, professional medical product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Mitomycin",
+    "scientific": "Mitomycin",
+    "category": "Cancer (Solid Tumors)",
+    "form": "Injection (Vial)",
+    "prompt": "Pharmaceutical vial of mitomycin chemotherapy injection, white and purple label, professional medical product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Gemzar",
+    "scientific": "Gemcitabine",
+    "category": "Cancer (Solid Tumors)",
+    "form": "Injection (Vial)",
+    "prompt": "Pharmaceutical vial of gemcitabine chemotherapy injection, white and red label, professional medical product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Mabthera",
+    "scientific": "Rituximab",
+    "category": "Cancer (Non-Hodgkin Lymphoma)",
+    "form": "Injection (Vial)",
+    "prompt": "Pharmaceutical vial of rituximab monoclonal antibody injection, white and purple label, professional medical product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Carboplatin",
+    "scientific": "Carboplatin",
+    "category": "Cancer (Ovary, Cervix)",
+    "form": "Injection (Vial)",
+    "prompt": "Pharmaceutical vial of carboplatin chemotherapy injection, white and silver label, professional medical product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Leukeran",
+    "scientific": "Chlorambucil",
+    "category": "Cancer (Lymphoma, Leukemia)",
+    "form": "Tablet",
+    "prompt": "Pharmaceutical box of chlorambucil chemotherapy tablets, white and orange packaging, blister pack, professional medical product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Cisplatin (10, 50, 100)",
+    "scientific": "Cisplatin",
+    "category": "Cancer (Gonadal)",
+    "form": "Injection (Vial)",
+    "prompt": "Pharmaceutical vials of cisplatin chemotherapy injection in multiple concentrations, white and gold label, professional medical product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Oxaliplatin (50, 100)",
+    "scientific": "Oxaliplatin",
+    "category": "Cancer (Colorectal)",
+    "form": "Injection (Vial)",
+    "prompt": "Pharmaceutical vials of oxaliplatin chemotherapy injection, white and silver label, professional medical product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Paclitaxel / Taxol (30, 50, 100, 150, 300)",
+    "scientific": "Paclitaxel",
+    "category": "Cancer (Ovary, Breast)",
+    "form": "Injection (Vial)",
+    "prompt": "Pharmaceutical vials of paclitaxel chemotherapy injection in various concentrations, white and red label, professional medical product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Navelbine (20, 30, 50)",
+    "scientific": "Vinorelbine",
+    "category": "Cancer (Testicular, Lymphoma)",
+    "form": "Injection (Vial)",
+    "prompt": "Pharmaceutical vials of vinorelbine chemotherapy injection, white and orange label, professional medical product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Zoladex",
+    "scientific": "Goserelin",
+    "category": "Cancer (Breast)",
+    "form": "Implant (Prefilled Syringe)",
+    "prompt": "Pharmaceutical box of goserelin implant prefilled syringe, white and orange packaging, professional medical product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Neupogen / Filgrastim / Zarxio",
+    "scientific": "Filgrastim (G-CSF)",
+    "category": "Neutropenia Treatment",
+    "form": "Injection (Vial / Syringe)",
+    "prompt": "Pharmaceutical vials and prefilled syringes of filgrastim G-CSF injection for neutropenia, white and blue label, professional medical product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "G-setron / Emex / Kytril / Zofran",
+    "scientific": "Ondansetron",
+    "category": "Antiemetic (Chemotherapy-induced)",
+    "form": "Tablet / Injection",
+    "prompt": "Boxes and vials of ondansetron antiemetic tablets and injection, white and red pharmaceutical packaging, professional medical product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Aclasta / Zometa",
+    "scientific": "Zoledronic Acid",
+    "category": "Hypercalcemia / Osteoporosis",
+    "form": "Injection (Vial)",
+    "prompt": "Pharmaceutical vial of zoledronic acid infusion for hypercalcemia and osteoporosis, white and blue label, professional medical product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Caverject",
+    "scientific": "Alprostadil",
+    "category": "Erectile Dysfunction",
+    "form": "Injection (Intrapenile)",
+    "prompt": "Pharmaceutical box of alprostadil intracavernosal injection for erectile dysfunction, white and blue packaging, vial and syringe, professional medical product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Clopixol",
+    "scientific": "Zuclopenthixol",
+    "category": "Antipsychotic (Injection)",
+    "form": "Injection (Ampoule)",
+    "prompt": "Pharmaceutical ampoules of zuclopenthixol antipsychotic injection, white and green packaging, professional medical product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Diprivan",
+    "scientific": "Propofol",
+    "category": "IV Anesthetic",
+    "form": "Injection (Ampoule / Vial)",
+    "prompt": "Pharmaceutical ampoules of propofol intravenous anesthetic, white and silver label, professional medical product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Dormicum",
+    "scientific": "Midazolam",
+    "category": "Sedative / Antipsychotic (Injection)",
+    "form": "Injection (Ampoule)",
+    "prompt": "Pharmaceutical ampoules of midazolam sedative injection, white and blue packaging, professional medical product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Syntocinon (5, 10 IU)",
+    "scientific": "Oxytocin",
+    "category": "Labor Induction",
+    "form": "Injection (Ampoule)",
+    "prompt": "Pharmaceutical ampoules of oxytocin labor induction hormone injection, white and red label, professional medical product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Dobutamin",
+    "scientific": "Dobutamine",
+    "category": "Cardiac Arrest / Inotropic",
+    "form": "Injection (Vial)",
+    "prompt": "Pharmaceutical vial of dobutamine cardiac stimulant injection, white and red label, professional medical product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Flumazenil",
+    "scientific": "Flumazenil",
+    "category": "Antidote (Benzodiazepine Overdose)",
+    "form": "Injection (Ampoule)",
+    "prompt": "Pharmaceutical ampoules of flumazenil benzodiazepine antidote injection, white and red label, professional medical product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Methergine",
+    "scientific": "Ergometrine",
+    "category": "Postpartum Hemorrhage",
+    "form": "Injection (Ampoule) / Tablet",
+    "prompt": "Pharmaceutical ampoules and tablets of ergometrine for postpartum hemorrhage, white and red packaging, professional medical product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Respirdal Consta (25, 37.5)",
+    "scientific": "Risperidone (Long Acting)",
+    "category": "Antipsychotic (Depot Injection)",
+    "form": "Injection (Vial)",
+    "prompt": "Pharmaceutical vials of risperidone long-acting depot antipsychotic injection, white and purple packaging, professional medical product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Synacthen Depot",
+    "scientific": "Tetracosactide",
+    "category": "Diagnostic (Adrenal Insufficiency)",
+    "form": "Injection (Ampoule)",
+    "prompt": "Pharmaceutical ampoules of tetracosactide synthetic ACTH for adrenal function test, white and green label, professional medical product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  },
+  {
+    "brand": "Herbi / Vaxigrip",
+    "scientific": "Influenza Vaccine",
+    "category": "Vaccine (Seasonal Flu)",
+    "form": "Injection (Prefilled Syringe)",
+    "prompt": "Prefilled syringes of seasonal influenza vaccine, white and blue pharmaceutical packaging, professional medical product photography, clean white background, clinical lighting, sharp focus, photorealistic"
+  }
+]

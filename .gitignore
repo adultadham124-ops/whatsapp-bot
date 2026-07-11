@@ -1,0 +1,8 @@
+node_modules/
+dist/
+.env
+*.log
+LagunaDubai-System/
+elshamyglow/
+memory_db/
+n8n_drug_prompts_node.json
