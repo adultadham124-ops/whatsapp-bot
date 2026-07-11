@@ -11,9 +11,13 @@ if (!accountSid || !authToken || !whatsappFrom) {
 const client = twilio(accountSid, authToken);
 
 export async function sendWhatsAppMessage(to: string, body: string): Promise<void> {
-  await client.messages.create({
-    from: `whatsapp:${whatsappFrom}`,
-    to: `whatsapp:${to}`,
-    body,
-  });
+  try {
+    await client.messages.create({
+      from: `whatsapp:${whatsappFrom}`,
+      to: `whatsapp:${to}`,
+      body,
+    });
+  } catch (err) {
+    console.error('[WHATSAPP] Failed to send:', err);
+  }
 }

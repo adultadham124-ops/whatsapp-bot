@@ -17,6 +17,33 @@ function getLocalHour(timezone: string): number {
   );
 }
 
+const morningGreetings = [
+  '☀️ صباح الفل يا صاحبي!',
+  '⏰ صباح النور والسرور!',
+  '🌅 صباح الجمال يا باشا!',
+  '☀️ يوه صباح الفل!',
+  '🌄 صباح الورد!',
+  '⏰ صباح الأمل والتفاؤل!',
+];
+
+function randomGreeting(): string {
+  return morningGreetings[Math.floor(Math.random() * morningGreetings.length)];
+}
+
+function timeAwareGreeting(hour: number): string {
+  if (hour < 12) return randomGreeting();
+  if (hour < 17) return [
+    '⛅ مساء الخفيف! عامل إيه النهاردة؟',
+    '🌤️ ياه، النهاردة عامل إيه؟',
+    '☁️ ازيك النهاردة؟',
+  ][Math.floor(Math.random() * 3)];
+  return [
+    '🌆 مساء الخير، عامل إيه؟',
+    '🌇 ازيك في آخر النهار؟',
+    '🌃 مساء الفل، مالك النهاردة؟',
+  ][Math.floor(Math.random() * 3)];
+}
+
 export async function processReminders(): Promise<void> {
   if (isProcessing.reminders) {
     console.log('[SCHEDULER] Previous reminder run still in progress, skipping');
@@ -36,6 +63,14 @@ export async function processReminders(): Promise<void> {
       console.error('[SCHEDULER] Error fetching reminders:', error.message);
       return;
     }
+
+    const reminderMessages = [
+      (c: string) => `⏰ ${c} — بقولك متنساش!`,
+      (c: string) => `تنبيه 🔔 ${c} دلوقتي يا صاحبي`,
+      (c: string) => `فاكر ${c}؟ 😅 ميحصلكش`,
+      (c: string) => `${c} ⏰ بكلمك عشان متنساش`,
+      (c: string) => `يالهوي ${c} 😬 فضلت أذكرك`,
+    ];
 
     for (const reminder of reminders || []) {
       try {
@@ -59,7 +94,8 @@ export async function processReminders(): Promise<void> {
           continue;
         }
 
-        await sendWhatsAppMessage(user.phone_number, `تذكير: ${content}`);
+        const msg = reminderMessages[Math.floor(Math.random() * reminderMessages.length)](content);
+        await sendWhatsAppMessage(user.phone_number, msg);
 
         const { error: updateError } = await supabase
           .from('reminders')
@@ -106,29 +142,14 @@ export async function sendDailySummaries(): Promise<void> {
         const key = `${user.id}_${localDate}`;
 
         if (sentSummaries.has(key)) continue;
-
         if (localHour !== 7) continue;
 
-        // Check if user has anything today before calling AI
-        const { count: taskCount } = await supabase
-          .from('tasks')
-          .select('*', { count: 'exact', head: true })
-          .eq('user_id', user.id)
-          .eq('status', 'pending')
-          .gte('due_at', `${localDate}T00:00:00`)
-          .lte('due_at', `${localDate}T23:59:59`);
-
-        const { count: contextCount } = await supabase
-          .from('daily_context')
-          .select('*', { count: 'exact', head: true })
-          .eq('user_id', user.id)
-          .eq('date', localDate);
-
-        const hasContent = (taskCount ?? 0) > 0 || (contextCount ?? 0) > 0;
-        if (!hasContent) continue;
-
+        // Send even if no tasks — just a friendly check-in
         const summary = await generateDailySummary(user.id, localDate);
-        await sendWhatsAppMessage(user.phone_number, `☀️ صباح الخير!\n\n${summary}`);
+        const greeting = timeAwareGreeting(localHour);
+        const fullMessage = `${greeting}\n\n${summary}`;
+
+        await sendWhatsAppMessage(user.phone_number, fullMessage);
 
         sentSummaries.add(key);
         console.log(`[SCHEDULER] Daily summary sent to user ${user.id}`);
